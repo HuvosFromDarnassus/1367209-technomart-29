@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Daniel Tvorun](https://up.htmlacademy.ru/htmlcss/29/user/1367209).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Кушнир](https://up.htmlacademy.ru/htmlcss/29/user/485545).
 
 ---
 
