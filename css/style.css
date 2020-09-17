@@ -1,0 +1,63 @@
+/* FONTS */
+
+/* Cuprum-Regular */
+@font-face {
+  font-family: "Cuprum-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cuprum Regular"), local("Cuprum-Regular"),
+    url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
+}
+
+/* Cuprum-Bold */
+@font-face {
+  font-family: "Cuprum-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cuprum Bold"), local("Cuprum-Bold"),
+    url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+/* Cuprum-Italic */
+@font-face {
+  font-family: "Cuprum-Italic";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Cuprum Italic"), local("Cuprum-Italic"),
+    url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+/* Cuprum-BoldItalic */
+@font-face {
+  font-family: "Cuprum-BoldItalic";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"),
+    url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("../fonts/cuprumbolditalic.woff") format("woff");
+}
+
+/* PT Sans-Regular */
+@font-face {
+  font-family: "PT Sans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+}
+
+/* PT Sans-Bold */
+@font-face {
+  font-family: "PT Sans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+}
+
+/* Здесь будут свойства стилей */
