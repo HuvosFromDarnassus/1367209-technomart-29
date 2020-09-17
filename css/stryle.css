@@ -1,1 +1,12 @@
+/* FONTS */
+/* cuprum-regular - latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum Regular'), local('Cuprum-Regular'),
+       url('../fonts/cuprum.woff2') format('woff2'),
+       url('../fonts/cuprum.woff') format('woff'),
+}
+
 /* Здесь будут свойства стилей */
