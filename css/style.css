@@ -1,3 +1,22 @@
+/* Custom properties */
+:root {
+  --basic-red: #ee3643;
+  --basic-green: #63a63e;
+  --basic-grey: #3d546f;
+  --basic-greylight: #c5c5c5;
+  --basic-background: #f1f5f7;
+  --white: #ffffff;
+  --special-yellow: #ffbf47;
+  --special-blue: #3bbce3;
+  --special-lilac: #dc91d8;
+  --special-greenlight: #8ed78f;
+  --special-yellowlight: #ffd180;
+  --success: #5fbb2d;
+  --warning: #ffbf47;
+  --error: #ba2732;
+  --grey-lighten: #ffffff @0% rgba(255, 255, 255, 0) @100%;
+}
+
 /* FONTS */
 
 /* Cuprum-Regular */
