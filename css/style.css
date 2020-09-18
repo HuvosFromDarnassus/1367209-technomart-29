@@ -4,6 +4,8 @@
   --basic-green: #63a63e;
   --basic-grey: #3d546f;
   --basic-greylight: #c5c5c5;
+  --alt-grey: #32425c;
+  --alt-grey-light: #a9a9a9;
   --basic-background: #f1f5f7;
   --white: #ffffff;
   --black: #000000;
@@ -108,6 +110,27 @@ a {
   line-height: 18px;
   font-style: normal;
   color: var(--white);
+  text-transform: uppercase;
+}
+
+.buy-button {
+  font-family: "Cuprum-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: normal;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.tomarks-button {
+  font-family: "Cuprum-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: normal;
+  color: var(--alt-grey);
+  text-transform: uppercase;
 }
 
 /* HEADER */
@@ -154,10 +177,7 @@ a {
   font-weight: 400;
   line-height: 24px;
   font-style: normal;
-  color: var(--basic-grey);
-  /* В макете описан цвет, которого
-  нет в наборе палитры всего проекта в Figma,
-  поставил цвет --basic-grey */
+  color: var(--alt-grey);
 }
 
 .login-link,
@@ -184,7 +204,7 @@ a {
 }
 
 /* SECTION: promo */
-.promo-main-title{
+.promo-main-title {
   display: none;
 }
 
@@ -208,6 +228,7 @@ a {
   line-height: 28px;
   font-style: normal;
   color: var(--white);
+  text-transform: uppercase;
 }
 
 .slider-list {
@@ -221,6 +242,7 @@ a {
   line-height: 36px;
   font-style: normal;
   color: var(--white);
+  text-transform: uppercase;
 }
 
 .slide-text {
@@ -230,4 +252,47 @@ a {
   line-height: 24px;
   font-style: normal;
   color: var(--white);
+}
+
+/* SECTION: popular-products */
+.popular-products-main-title {
+  font-family: "Cuprum-Regular";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  font-style: normal;
+  color: var(--alt-grey);
+  text-transform: uppercase;
+}
+
+.popular-products-list {
+  list-style: none;
+}
+
+.popular-products-list-item-title {
+  font-family: "PT Sans-Bold";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+  color: var(--black);
+}
+
+.old-product-price {
+  font-family: "PT Sans-Bold";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  font-style: normal;
+  color: var(--alt-grey-light);
+}
+
+.product-price {
+  font-family: "PT Sans-Bold";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  font-style: normal;
+  color: var(--white);
+  text-decoration: none;
 }
