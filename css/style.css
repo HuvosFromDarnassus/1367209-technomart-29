@@ -6,6 +6,7 @@
   --basic-greylight: #c5c5c5;
   --basic-background: #f1f5f7;
   --white: #ffffff;
+  --black: #000000;
   --special-yellow: #ffbf47;
   --special-blue: #3bbce3;
   --special-lilac: #dc91d8;
@@ -79,4 +80,82 @@
     url("../fonts/ptsansbold.woff") format("woff");
 }
 
-/* Здесь будут свойства стилей */
+/* STYLES */
+body {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* Text styles */
+.header {
+  background-color: var(--basic-background);
+}
+
+.marks-link,
+.cart-link,
+.checkout-link {
+  font-family: "Cuprum-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  color: var(--white);
+}
+
+.header-slogan-text {
+  font-family: "Cuprum-Italic";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  font-style: italic;
+  color: var(--basic-red);
+}
+
+.header-location-title {
+  display: none;
+}
+
+.header-phone {
+  font-family: "Cuprum-Bold";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: normal;
+  color: var(--basic-red);
+}
+
+.header-adress {
+  font-family: "Cuprum-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  color: var(--basic-grey);
+  /* В макете описан цвет, которого
+  нет в наборе палитры всего проекта в Figma,
+  поставил цвет --basic-grey */
+}
+
+.login-link,
+.signup-link {
+  font-family: "Cuprum-Regular";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  font-style: normal;
+  color: var(--black);
+}
+
+.main-site-nav-link {
+  font-family: "Cuprum-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  color: var(--white);
+}
