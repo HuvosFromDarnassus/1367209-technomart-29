@@ -8,7 +8,7 @@
   --alt-grey-light: #a9a9a9;
   --basic-background: #f1f5f7;
   --alt-background: #293449;
-  --title-background: #F9F5F0;
+  --title-background: #f9f5f0;
   --white: #ffffff;
   --black: #000000;
   --special-yellow: #ffbf47;
@@ -19,6 +19,11 @@
   --success: #5fbb2d;
   --warning: #ffbf47;
   --error: #ba2732;
+  --hover-button-red: #CA2C37;
+  --active-link-white: rgba(255, 255, 255, 0.5);
+  --active-special-yellowlight: rgba(255, 209, 128, 0.5);
+  --active-nav-grey: #1D2739;
+  --active-buy-button-green: #518534;
   --grey-lighten: #ffffff @0% rgba(255, 255, 255, 0) @100%;
 }
 
@@ -112,6 +117,16 @@ a {
   font-style: normal;
   color: var(--white);
   text-transform: uppercase;
+  background-color: var(--basic-red);
+}
+
+/* Состояния: .button */
+.button:hover {
+  background-color: var(--hover-button-red);
+}
+
+.button:active {
+  background-color: var(--error);
 }
 
 .buy-button {
@@ -122,6 +137,16 @@ a {
   font-style: normal;
   color: var(--white);
   text-transform: uppercase;
+  background-color: var(--basic-green);
+}
+
+/* Состояния: .buy-button */
+.buy-button:hover {
+  background-color: var(--success);
+}
+
+.buy-button:active {
+  background-color: var(--active-buy-button-green);
 }
 
 .tomarks-button {
@@ -148,7 +173,6 @@ a {
   background-color: var(--title-background);
 }
 
-/* Text styles */
 /* HEADER */
 .header {
   background-color: var(--basic-background);
@@ -167,6 +191,36 @@ a {
   line-height: 24px;
   font-style: normal;
   color: var(--white);
+}
+
+.checkout-link {
+  background-color: var(--basic-green);
+}
+
+/* Состояния: .marks-link,
+.cart-link,
+.checkout-link */
+.marks-link:hover,
+.cart-link:hover,
+.checkout-link:hover {
+  /* Добавил для будущих
+  изменений при наведений
+  (заранее) */
+  color: var(--white);
+}
+
+.checkout-link:hover {
+  background-color: var(--success);
+}
+
+.marks-link:active,
+.cart-link:active,
+.checkout-link:active {
+  color: var(--active-link-white);
+}
+
+.checkout-link:active {
+  background-color: var(--basic-green);
 }
 
 .header-slogan-text {
@@ -208,6 +262,19 @@ a {
   line-height: 21px;
   font-style: normal;
   color: var(--black);
+  background-color: var(--white);
+}
+
+/* Состояния: .login-link,
+.signup-link */
+.login-link:hover,
+.signup-link:hover {
+  color: var(--basic-red);
+}
+
+.login-link:active,
+.signup-link:active {
+  color: var(--basic-greylight);
 }
 
 .site-nav {
@@ -224,6 +291,20 @@ a {
   color: var(--white);
 }
 
+/* Состояния: .main-site-nav-link */
+.main-site-nav-link:hover {
+  /* Добавил для будущих
+  изменений при наведений
+  (заранее) */
+  color: var(--white);
+  background-color: var(--alt-background)
+}
+
+.main-site-nav-link:active {
+  color: var(--active-link-white);
+  background-color: var(--active-nav-grey);
+}
+
 /* SECTION: promo */
 .promo-main-title {
   display: none;
@@ -231,6 +312,26 @@ a {
 
 .promo-list {
   list-style: none;
+}
+
+.promo-list-item:first-child {
+  background-color: var(--warning);
+}
+
+.promo-list-item:nth-child(2) {
+  background-color: var(--special-blue);
+}
+
+.promo-list-item:nth-child(3) {
+  background-color: var(--special-lilac);
+}
+
+.promo-list-item:nth-child(4) {
+  background-color: var(--special-greenlight);
+}
+
+.promo-list-item:nth-child(5) {
+  background-color: var(--special-yellow);
 }
 
 .promo-list-item-title {
@@ -250,6 +351,17 @@ a {
   font-style: normal;
   color: var(--white);
   text-transform: uppercase;
+  background-color: var(--active-link-white);
+}
+
+
+/* Состояния: .promo-item-link */
+.promo-item-link:hover {
+  background-color: var(--basic-greylight);
+}
+
+.promo-item-link:active {
+  background-color: var(--alt-grey-light);
 }
 
 .slider-list {
@@ -310,6 +422,7 @@ a {
   font-style: normal;
   color: var(--white);
   text-decoration: none;
+  background-color: var(--basic-red);
 }
 
 /* SECTION: popular-producers */
@@ -352,6 +465,17 @@ a {
   line-height: 30px;
   font-style: normal;
   color: var(--white);
+  background-color: var(--alt-grey);
+}
+
+/* Состояния: .services-toggle-link */
+.services-toggle-link:hover {
+  background-color: var(--alt-background);
+}
+
+.services-toggle-link:active {
+  color: var(--alt-grey);
+  background-color: var(--white);
 }
 
 .services-content-list {
@@ -419,6 +543,15 @@ a {
   color: var(--basic-background);
 }
 
+/* Состояния: .footer-site-nav-link */
+.footer-site-nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer-site-nav-link:active {
+  color: var(--active-link-white);
+}
+
 .footer-adress,
 .footer-phone {
   font-family: "Cuprum-Regular";
@@ -436,6 +569,15 @@ a {
   line-height: 24px;
   font-style: normal;
   color: var(--special-yellowlight);
+}
+
+/* Состояния: .footer-extra-nav-link */
+.footer-extra-nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer-extra-nav-link:active {
+  color: var(--active-special-yellowlight);
 }
 
 .footer-bottom {
@@ -469,4 +611,16 @@ a {
 .feedback-link,
 .madeby-link {
   color: var(--special-yellowlight);
+}
+
+/* Состояния: .feedback-link,
+.madeby-link */
+.feedback-link:hover,
+.madeby-link:hover {
+  text-decoration: underline;
+}
+
+.feedback-link:active,
+.madeby-link:active {
+  color: var(--basic-red);
 }
