@@ -7,6 +7,7 @@
   --alt-grey: #32425c;
   --alt-grey-light: #a9a9a9;
   --basic-background: #f1f5f7;
+  --alt-background: #293449;
   --white: #ffffff;
   --black: #000000;
   --special-yellow: #ffbf47;
@@ -148,6 +149,10 @@ a {
   background-color: var(--basic-background);
 }
 
+.header-top {
+  background-color: var(--alt-background);
+}
+
 .marks-link,
 .cart-link,
 .checkout-link {
@@ -202,6 +207,7 @@ a {
 
 .site-nav {
   list-style: none;
+  background-color: var(--alt-grey);
 }
 
 .main-site-nav-link {
@@ -386,4 +392,76 @@ a {
   line-height: 24px;
   font-style: normal;
   color: var(--black);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--alt-grey);
+}
+
+.footer-site-nav,
+.footer-extra-nav,
+.socials-list {
+  list-style: none;
+}
+
+.footer-site-nav-link {
+  font-family: "Cuprum-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  color: var(--basic-background);
+}
+
+.footer-adress,
+.footer-phone {
+  font-family: "Cuprum-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  color: var(--basic-background);
+}
+
+.footer-extra-nav-link {
+  font-family: "Cuprum-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  color: var(--special-yellowlight);
+}
+
+.footer-bottom {
+  background-color: var(--alt-background);
+}
+
+.copyright-title,
+.socials-title {
+  display: none;
+}
+
+.copyright-text {
+  font-family: "Cuprum-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: normal;
+  color: var(--white);
+}
+
+.feedback,
+.madeby {
+  font-family: "Cuprum-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: normal;
+  color: var(--white);
+}
+
+.feedback-link,
+.madeby-link {
+  color: var(--special-yellowlight);
 }
