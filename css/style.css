@@ -8,6 +8,7 @@
   --alt-grey-light: #a9a9a9;
   --basic-background: #f1f5f7;
   --alt-background: #293449;
+  --title-background: #F9F5F0;
   --white: #ffffff;
   --black: #000000;
   --special-yellow: #ffbf47;
@@ -141,6 +142,10 @@ a {
   line-height: 30px;
   font-style: normal;
   text-transform: uppercase;
+}
+
+.title-button {
+  background-color: var(--title-background);
 }
 
 /* Text styles */
