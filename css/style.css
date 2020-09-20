@@ -134,28 +134,28 @@ a {
   background-color: var(--error);
 }
 
-.buy-button {
+.product-card-button-buy {
   font-family: "Cuprum", "Arial", sans-serif;
   background-color: var(--basic-green);
 }
 
 /* Состояния: .buy-button */
-.buy-button:hover {
+.product-card-button-buy:hover {
   background-color: var(--success);
 }
 
-.buy-button:active {
+.product-card-button-buy:active {
   background-color: var(--active-buy-button-green);
 }
 
-.tomarks-button {
+.product-card-button-tomarks {
   font-family: "Cuprum", "Arial", sans-serif;
   color: var(--alt-grey);
   background-color: transparent;
 }
 
 /* Состояния: .tomarks-button */
-.tomarks-button:hover {
+.product-card-button-tomarks:hover {
   background-color: transparent;
 }
 
@@ -273,7 +273,6 @@ a {
 }
 
 .main-nav-list {
-
   background-color: var(--alt-grey);
 }
 
@@ -372,7 +371,7 @@ a {
   color: var(--alt-grey);
 }
 
-.popular-products-list-item-title {
+.product-card-title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -380,7 +379,7 @@ a {
   color: var(--black);
 }
 
-.old-product-price {
+.product-card-old-price {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -388,7 +387,7 @@ a {
   color: var(--alt-grey-light);
 }
 
-.product-price {
+.product-card-price {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
