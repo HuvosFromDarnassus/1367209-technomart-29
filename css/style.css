@@ -19,10 +19,10 @@
   --success: #5fbb2d;
   --warning: #ffbf47;
   --error: #ba2732;
-  --hover-button-red: #CA2C37;
+  --hover-button-red: #ca2c37;
   --active-link-white: rgba(255, 255, 255, 0.5);
   --active-special-yellowlight: rgba(255, 209, 128, 0.5);
-  --active-nav-grey: #1D2739;
+  --active-nav-grey: #1d2739;
   --active-buy-button-green: #518534;
   --grey-lighten: #ffffff @0% rgba(255, 255, 255, 0) @100%;
 }
@@ -106,6 +106,12 @@ img {
 }
 a {
   text-decoration: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* BUTTONS */
@@ -267,7 +273,7 @@ a {
 }
 
 .site-nav {
-  list-style: none;
+
   background-color: var(--alt-grey);
 }
 
@@ -285,7 +291,7 @@ a {
   изменений при наведений
   (заранее) */
   color: var(--white);
-  background-color: var(--alt-background)
+  background-color: var(--alt-background);
 }
 
 .main-site-nav-link:active {
@@ -296,10 +302,6 @@ a {
 /* SECTION: promo */
 .promo-main-title {
   display: none;
-}
-
-.promo-list {
-  list-style: none;
 }
 
 .promo-list-item:first-child {
@@ -339,7 +341,6 @@ a {
   background-color: var(--active-link-white);
 }
 
-
 /* Состояния: .promo-item-link */
 .promo-item-link:hover {
   background-color: var(--basic-greylight);
@@ -347,10 +348,6 @@ a {
 
 .promo-item-link:active {
   background-color: var(--alt-grey-light);
-}
-
-.slider-list {
-  list-style: none;
 }
 
 .slide-title {
@@ -373,10 +370,6 @@ a {
 /* SECTION: popular-products */
 .popular-products-main-title {
   color: var(--alt-grey);
-}
-
-.popular-products-list {
-  list-style: none;
 }
 
 .popular-products-list-item-title {
@@ -410,10 +403,6 @@ a {
   color: var(--alt-grey);
 }
 
-.producers-list {
-  list-style: none;
-}
-
 /* SECTION: services */
 .services {
   background-color: var(--basic-background);
@@ -431,10 +420,6 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--black);
-}
-
-.services-toggle-link-list {
-  list-style: none;
 }
 
 .services-toggle-link {
@@ -455,10 +440,6 @@ a {
   background-color: var(--white);
 }
 
-.services-content-list {
-  list-style: none;
-}
-
 /* SECTION: about */
 .about-main-title {
   color: var(--black);
@@ -470,10 +451,6 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--black);
-}
-
-.about-list {
-  list-style: none;
 }
 
 .about-list-item {
@@ -500,12 +477,6 @@ a {
 /* FOOTER */
 .footer {
   background-color: var(--alt-grey);
-}
-
-.footer-site-nav,
-.footer-extra-nav,
-.socials-list {
-  list-style: none;
 }
 
 .footer-site-nav-link {
