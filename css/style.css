@@ -114,7 +114,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  font-style: normal;
   color: var(--white);
   text-transform: uppercase;
   background-color: var(--basic-red);
@@ -160,7 +159,6 @@ a {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  font-style: normal;
   text-transform: uppercase;
 }
 
@@ -184,7 +182,6 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--white);
 }
 
@@ -236,7 +233,6 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
-  font-style: normal;
   color: var(--basic-red);
 }
 
@@ -245,7 +241,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--alt-grey);
 }
 
@@ -255,7 +250,6 @@ a {
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
-  font-style: normal;
   color: var(--black);
   background-color: var(--white);
 }
@@ -282,7 +276,6 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--white);
 }
 
@@ -331,10 +324,8 @@ a {
 
 .promo-list-item-title {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  font-style: normal;
   color: var(--white);
 }
 
@@ -343,7 +334,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
-  font-style: normal;
   color: var(--white);
   text-transform: uppercase;
   background-color: var(--active-link-white);
@@ -368,7 +358,6 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
-  font-style: normal;
   color: var(--white);
   text-transform: uppercase;
 }
@@ -378,7 +367,6 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--white);
 }
 
@@ -396,7 +384,6 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  font-style: normal;
   color: var(--black);
 }
 
@@ -405,7 +392,6 @@ a {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  font-style: normal;
   color: var(--alt-grey-light);
 }
 
@@ -414,7 +400,6 @@ a {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  font-style: normal;
   color: var(--white);
   text-decoration: none;
   background-color: var(--basic-red);
@@ -445,7 +430,6 @@ a {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--black);
 }
 
@@ -458,7 +442,6 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
-  font-style: normal;
   color: var(--white);
   background-color: var(--alt-grey);
 }
@@ -467,7 +450,6 @@ a {
 .services-toggle-link:hover {
   background-color: var(--alt-background);
 }
-
 .services-toggle-link:active {
   color: var(--alt-grey);
   background-color: var(--white);
@@ -487,7 +469,6 @@ a {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--black);
 }
 
@@ -500,7 +481,6 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--black);
 }
 
@@ -514,7 +494,6 @@ a {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--black);
 }
 
@@ -534,7 +513,6 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--basic-background);
 }
 
@@ -553,7 +531,6 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--basic-background);
 }
 
@@ -562,7 +539,6 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
   color: var(--special-yellowlight);
 }
 
@@ -589,7 +565,6 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  font-style: normal;
   color: var(--white);
 }
 
@@ -599,7 +574,6 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  font-style: normal;
   color: var(--white);
 }
 
