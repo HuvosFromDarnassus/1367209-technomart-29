@@ -304,27 +304,27 @@ a {
   display: none;
 }
 
-.promo-list-item:nth-child(1) {
+.promo-item:nth-child(1) {
   background-color: var(--warning);
 }
 
-.promo-list-item:nth-child(2) {
+.promo-item:nth-child(2) {
   background-color: var(--special-blue);
 }
 
-.promo-list-item:nth-child(3) {
+.promo-item:nth-child(3) {
   background-color: var(--special-lilac);
 }
 
-.promo-list-item:nth-child(4) {
+.promo-item:nth-child(4) {
   background-color: var(--special-greenlight);
 }
 
-.promo-list-item:nth-child(5) {
+.promo-item:nth-child(5) {
   background-color: var(--special-yellow);
 }
 
-.promo-list-item-title {
+.promo-item-title {
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   line-height: 30px;
@@ -453,7 +453,7 @@ a {
   color: var(--black);
 }
 
-.about-list-item {
+.about-item {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -479,7 +479,7 @@ a {
   background-color: var(--alt-grey);
 }
 
-.footer-site-nav-link {
+.footer-nav-link {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -487,12 +487,12 @@ a {
   color: var(--basic-background);
 }
 
-/* Состояния: .footer-site-nav-link */
-.footer-site-nav-link:hover {
+/* Состояния: .footer-nav-link */
+.footer-nav-link:hover {
   text-decoration: underline;
 }
 
-.footer-site-nav-link:active {
+.footer-nav-link:active {
   color: var(--active-link-white);
 }
 
