@@ -51,7 +51,7 @@
 
 /* Cuprum-Italic */
 @font-face {
-  font-family: "Cuprum-Italic";
+  font-family: "Cuprum";
   font-style: italic;
   font-weight: 400;
   src: local("Cuprum Italic"), local("Cuprum-Italic"),
@@ -61,7 +61,7 @@
 
 /* Cuprum-BoldItalic */
 @font-face {
-  font-family: "Cuprum-BoldItalic";
+  font-family: "Cuprum";
   font-style: italic;
   font-weight: 700;
   src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"),
@@ -94,7 +94,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum-Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -135,7 +135,6 @@ a {
 }
 
 .product-card-button-buy {
-  font-family: "Cuprum", "Arial", sans-serif;
   background-color: var(--basic-green);
 }
 
@@ -149,7 +148,6 @@ a {
 }
 
 .product-card-button-tomarks {
-  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--alt-grey);
   background-color: transparent;
 }
@@ -174,6 +172,7 @@ a {
 
 /* HEADER */
 .header {
+  font-family: "Cuprum", "Arial", sans-serif;
   background-color: var(--basic-background);
 }
 
@@ -184,7 +183,6 @@ a {
 .marks-link,
 .cart-link,
 .checkout-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -222,7 +220,6 @@ a {
 }
 
 .header-slogan-text {
-  font-family: "Cuprum-Italic", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
@@ -235,7 +232,6 @@ a {
 }
 
 .header-phone {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -243,7 +239,6 @@ a {
 }
 
 .header-adress {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -252,7 +247,6 @@ a {
 
 .login-link,
 .signup-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -277,7 +271,6 @@ a {
 }
 
 .main-nav-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -299,6 +292,10 @@ a {
 }
 
 /* SECTION: promo */
+.promo {
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
 .promo-main-title {
   display: none;
 }
@@ -324,14 +321,12 @@ a {
 }
 
 .promo-item-title {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   line-height: 30px;
   color: var(--white);
 }
 
 .promo-item-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
@@ -350,7 +345,6 @@ a {
 }
 
 .slide-title {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -359,7 +353,6 @@ a {
 }
 
 .slide-text {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -367,12 +360,15 @@ a {
 }
 
 /* SECTION: popular-products */
+.popular-products {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
 .popular-products-main-title {
   color: var(--alt-grey);
 }
 
 .product-card-title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -380,7 +376,6 @@ a {
 }
 
 .product-card-old-price {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -388,7 +383,6 @@ a {
 }
 
 .product-card-price {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -475,11 +469,11 @@ a {
 
 /* FOOTER */
 .footer {
+  font-family: "Cuprum", "Arial", sans-serif;
   background-color: var(--alt-grey);
 }
 
 .footer-nav-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -497,7 +491,6 @@ a {
 
 .footer-adress,
 .footer-phone {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -505,7 +498,6 @@ a {
 }
 
 .footer-extra-nav-link {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -531,7 +523,6 @@ a {
 }
 
 .copyright-text {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -540,7 +531,6 @@ a {
 
 .feedback,
 .madeby {
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
