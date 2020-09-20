@@ -110,7 +110,7 @@ a {
 
 /* BUTTONS */
 .button {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -130,7 +130,7 @@ a {
 }
 
 .buy-button {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -150,7 +150,7 @@ a {
 }
 
 .tomarks-button {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -161,7 +161,7 @@ a {
 
 /* TITLES */
 .title {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -185,7 +185,7 @@ a {
 .marks-link,
 .cart-link,
 .checkout-link {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -237,7 +237,7 @@ a {
 }
 
 .header-phone {
-  font-family: "Cuprum-Bold";
+  font-family: "Cuprum";
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -246,7 +246,7 @@ a {
 }
 
 .header-adress {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -256,7 +256,7 @@ a {
 
 .login-link,
 .signup-link {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -283,7 +283,7 @@ a {
 }
 
 .main-site-nav-link {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -335,7 +335,7 @@ a {
 }
 
 .promo-list-item-title {
-  font-family: "Cuprum-Bold";
+  font-family: "Cuprum";
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -344,7 +344,7 @@ a {
 }
 
 .promo-item-link {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
@@ -369,7 +369,7 @@ a {
 }
 
 .slide-title {
-  font-family: "Cuprum-Bold";
+  font-family: "Cuprum";
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -379,7 +379,7 @@ a {
 }
 
 .slide-text {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -397,7 +397,7 @@ a {
 }
 
 .popular-products-list-item-title {
-  font-family: "PT Sans-Bold";
+  font-family: "PT Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -406,7 +406,7 @@ a {
 }
 
 .old-product-price {
-  font-family: "PT Sans-Bold";
+  font-family: "PT Sans";
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -415,7 +415,7 @@ a {
 }
 
 .product-price {
-  font-family: "PT Sans-Bold";
+  font-family: "PT Sans";
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -446,7 +446,7 @@ a {
 
 .services-slogan,
 .services-content-text {
-  font-family: "PT Sans-Regular";
+  font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -459,7 +459,7 @@ a {
 }
 
 .services-toggle-link {
-  font-family: "Cuprum-Bold";
+  font-family: "Cuprum";
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -488,7 +488,7 @@ a {
 }
 
 .about-desc {
-  font-family: "PT Sans-Regular";
+  font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -501,7 +501,7 @@ a {
 }
 
 .about-list-item {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -515,7 +515,7 @@ a {
 }
 
 .contacts-desc {
-  font-family: "PT Sans-Regular";
+  font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -535,7 +535,7 @@ a {
 }
 
 .footer-site-nav-link {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -554,7 +554,7 @@ a {
 
 .footer-adress,
 .footer-phone {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -563,7 +563,7 @@ a {
 }
 
 .footer-extra-nav-link {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -590,7 +590,7 @@ a {
 }
 
 .copyright-text {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -600,7 +600,7 @@ a {
 
 .feedback,
 .madeby {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
