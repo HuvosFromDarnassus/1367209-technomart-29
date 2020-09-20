@@ -415,7 +415,7 @@ a {
   color: var(--black);
 }
 
-.services-toggle-link {
+.services-tab-link {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -424,11 +424,11 @@ a {
   background-color: var(--alt-grey);
 }
 
-/* Состояния: .services-toggle-link */
-.services-toggle-link:hover {
+/* Состояния: .services-tab-link */
+.services-tab-link:hover {
   background-color: var(--alt-background);
 }
-.services-toggle-link:active {
+.services-tab-link:active {
   color: var(--alt-grey);
   background-color: var(--white);
 }
