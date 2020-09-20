@@ -272,12 +272,12 @@ a {
   color: var(--basic-greylight);
 }
 
-.site-nav {
+.main-nav-list {
 
   background-color: var(--alt-grey);
 }
 
-.main-site-nav-link {
+.main-nav-link {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -286,7 +286,7 @@ a {
 }
 
 /* Состояния: .main-site-nav-link */
-.main-site-nav-link:hover {
+.main-nav-link:hover {
   /* Добавил для будущих
   изменений при наведений
   (заранее) */
@@ -294,7 +294,7 @@ a {
   background-color: var(--alt-background);
 }
 
-.main-site-nav-link:active {
+.main-nav-link:active {
   color: var(--active-link-white);
   background-color: var(--active-nav-grey);
 }
@@ -304,7 +304,7 @@ a {
   display: none;
 }
 
-.promo-list-item:first-child {
+.promo-list-item:nth-child(1) {
   background-color: var(--warning);
 }
 
