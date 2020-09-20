@@ -31,7 +31,7 @@
 
 /* Cuprum-Regular */
 @font-face {
-  font-family: "Cuprum-Regular";
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
   src: local("Cuprum Regular"), local("Cuprum-Regular"),
@@ -41,12 +41,12 @@
 
 /* Cuprum-Bold */
 @font-face {
-  font-family: "Cuprum-Bold";
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: 700;
   src: local("Cuprum Bold"), local("Cuprum-Bold"),
     url("../fonts/cuprumbold.woff2") format("woff2"),
-    url("../fonts/cuprumitalic.woff") format("woff");
+    url("../fonts/cuprumbold.woff") format("woff");
 }
 
 /* Cuprum-Italic */
@@ -71,7 +71,7 @@
 
 /* PT Sans-Regular */
 @font-face {
-  font-family: "PT Sans-Regular";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: local("PT Sans"), local("PTSans-Regular"),
@@ -81,7 +81,7 @@
 
 /* PT Sans-Bold */
 @font-face {
-  font-family: "PT Sans-Bold";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: local("PT Sans Bold"), local("PTSans-Bold"),
