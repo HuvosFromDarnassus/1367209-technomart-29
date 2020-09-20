@@ -131,12 +131,6 @@ a {
 
 .buy-button {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  font-style: normal;
-  color: var(--white);
-  text-transform: uppercase;
   background-color: var(--basic-green);
 }
 
@@ -151,12 +145,13 @@ a {
 
 .tomarks-button {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  font-style: normal;
   color: var(--alt-grey);
-  text-transform: uppercase;
+  background-color: transparent;
+}
+
+/* Состояния: .tomarks-button */
+.tomarks-button:hover {
+  background-color: transparent;
 }
 
 /* TITLES */
