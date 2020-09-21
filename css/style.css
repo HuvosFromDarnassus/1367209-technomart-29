@@ -9,6 +9,8 @@
   --basic-background: #f1f5f7;
   --alt-background: #293449;
   --title-background: #f9f5f0;
+  --alt-title-background: #f2f6f8;
+  --options-background: #f7f3ec;
   --white: #ffffff;
   --black: #000000;
   --special-yellow: #ffbf47;
@@ -170,6 +172,7 @@ a {
   background-color: var(--title-background);
 }
 
+/* INDEX PAGE STYLES */
 /* HEADER */
 .header {
   font-family: "Cuprum", "Arial", sans-serif;
@@ -586,4 +589,55 @@ a {
 .feedback-link:active,
 .madeby-link:active {
   color: var(--basic-red);
+}
+
+/* CATALOG PAGE STYLES */
+.catalog-product-title {
+  background-color: var(--alt-title-background);
+  color: var(--alt-grey);
+}
+
+.bread-crumbs-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.product-filter,
+.product-sort {
+  background-color: var(--options-background);
+}
+
+.product-filter-title {
+  display: none;
+}
+
+.product-sort-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.product-sort-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+  opacity: 0.3;
+  border-bottom: var(--basic-red) dotted 1px;
+}
+
+.active-sort,
+.active-cost {
+  color: var(--basic-red);
+  opacity: 1;
+  border-bottom: none;
 }
