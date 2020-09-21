@@ -637,11 +637,30 @@ a {
   border-bottom: var(--basic-red) dotted 1px;
 }
 
-.active-sort,
-.active-cost {
+/* Состояния: .product-sort-link,
+.product-sort-more,
+.product-sort-less
+ */
+.product-sort-link:hover {
+  opacity: 1;
+  border-bottom: var(--basic-red) solid 1px;
+}
+
+.product-sort-more:hover,
+.product-sort-less:hover {
+  opacity: 1;
+}
+
+.product-sort-link:active {
   color: var(--basic-red);
   opacity: 1;
   border-bottom: none;
+}
+
+.product-sort-more:active,
+.product-sort-less:active {
+  opacity: 1;
+  color: var(--basic-red);
 }
 
 .pagination-link {
