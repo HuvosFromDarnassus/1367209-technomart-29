@@ -3,52 +3,53 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Academy: Каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Каталог</title>
 </head>
 
-<body>
-  <header>
+<body class="page-body">
+  <header class="header">
     <!-- HEADER -->
-    <!-- Изображение-заглушка - логотип сайта -->
-    <a href="index.html"><img src="https://via.placeholder.com/220x47" alt="Логотип" /></a>
+    <div class="header-top">
+      <!-- Изображение-заглушка - логотип сайта -->
+      <a class="header-logo" href="index.html"><img src="https://via.placeholder.com/220x47" alt="Логотип" /></a>
 
-    <!-- Ссылки на страницы: закладки, корзина и оформление заказа -->
-    <a href="">Закладки:0</a>
-    <a href="">Корзина:10</a>
-    <a href="">Оформить заказ</a>
+      <!-- Ссылки на страницы: закладки, корзина и оформление заказа -->
+      <a class="marks-link" href="">Закладки:0</a>
+      <a class="filled-cart cart-link" href="">Корзина:10</a>
+      <a class="checkout-link" href="">Оформить заказ</a>
+    </div>
 
-    <p>
-      <i>Интернет-магазин строительных материалов и инструментов для
+    <p class="header-slogan">
+      <i class="header-slogan-text">Интернет-магазин строительных материалов и инструментов для
         ремонта</i>
     </p>
 
     <!-- Секция: Как нас найти -->
-    <div>
-      <h2>Как нас найти</h2>
-      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <div class="header-location">
+      <h2 class="header-location-title">Как нас найти</h2>
+      <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
 
     <!-- Основное меню -->
-    <div>
-      <a href="">Равшан Джамшутович</a>
+    <div class="login">
+      <a class="authorized-user" href="">Равшан Джамшутович</a>
       <a href="">Выйти</a>
-      <a href="">Мои заказы</a>
-      <a href="">Личный кабинет</a>
+      <a class="orders" href="">Мои заказы</a>
+      <a class="personal-area" href="">Личный кабинет</a>
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="">Новости</a></li>
-        <li><a href="">Спецпредложения</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
+    <nav class="main-nav">
+      <ul class="list-reset main-nav-list">
+        <li class="main-nav-item"><a class="main-nav-link" href="index.html">Главная</a></li>
+        <li class="main-nav-item"><a class="main-nav-link" href="">Компания</a></li>
+        <li class="main-nav-item"><a class="main-nav-link" href="catalog.html">Каталог</a></li>
+        <li class="main-nav-item"><a class="main-nav-link" href="">Новости</a></li>
+        <li class="main-nav-item"><a class="main-nav-link" href="">Спецпредложения</a></li>
+        <li class="main-nav-item"><a class="main-nav-link" href="">Доставка</a></li>
+        <li class="main-nav-item"><a class="main-nav-link" href="">Контакты</a></li>
       </ul>
     </nav>
   </header>
