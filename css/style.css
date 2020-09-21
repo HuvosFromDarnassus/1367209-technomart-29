@@ -611,12 +611,15 @@ a {
   background-color: var(--options-background);
 }
 
+.product-sort {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
 .product-filter-title {
   display: none;
 }
 
 .product-sort-title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -625,7 +628,6 @@ a {
 }
 
 .product-sort-link {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -640,4 +642,33 @@ a {
   color: var(--basic-red);
   opacity: 1;
   border-bottom: none;
+}
+
+.pagination-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.active-pagination {
+  background-color: var(--basic-red);
+}
+
+.product-desc {
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: var(--basic-background);
+}
+
+.product-desc-title {
+  color: var(--black);
+}
+
+.product-desc-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--black);
 }
