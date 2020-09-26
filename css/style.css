@@ -110,6 +110,17 @@ a {
   text-decoration: none;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
