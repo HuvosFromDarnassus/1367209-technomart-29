@@ -471,6 +471,12 @@ a {
   color: var(--alt-grey);
 }
 
+.producers-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 /* SECTION: services */
 .services {
   background-color: var(--basic-background);
