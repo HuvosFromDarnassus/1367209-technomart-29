@@ -183,6 +183,8 @@ a {
 
 .title-button {
   background-color: var(--title-background);
+  display: grid;
+  grid-template-columns: 1fr max-content;
 }
 
 /* INDEX PAGE STYLES */
@@ -429,6 +431,12 @@ a {
 /* SECTION: popular-products */
 .popular-products {
   font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.popular-products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .popular-products-main-title {
