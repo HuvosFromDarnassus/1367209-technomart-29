@@ -11,35 +11,43 @@
 <body class="page-body">
   <header class="header">
     <!-- HEADER -->
-    <div class="header-top">
-      <!-- Изображение-заглушка - логотип сайта -->
-      <a class="header-logo" href="index.html"><img src="https://via.placeholder.com/220x47" alt="Логотип" /></a>
+    <div class="header-top-wrapper">
+      <div class="header-top container">
+        <!-- Изображение-заглушка - логотип сайта -->
+        <a class="header-logo" href="index.html"><img src="https://via.placeholder.com/220x47" alt="Логотип" /></a>
 
-      <!-- Ссылки на страницы: закладки, корзина и оформление заказа -->
-      <a class="marks-link" href="">Закладки:0</a>
-      <a class="cart-link" href="">Корзина:0</a>
-      <a class="checkout-link" href="">Оформить заказ</a>
+        <!-- Тут будет поле поиска -->
+
+        <!-- Ссылки на страницы: закладки, корзина и оформление заказа -->
+        <div class="user-links-wrapper">
+          <a class="marks-link" href="">Закладки:0</a>
+          <a class="cart-link" href="">Корзина:0</a>
+          <a class="checkout-link" href="">Оформить заказ</a>
+        </div>
+      </div>
     </div>
 
-    <p class="header-slogan">
-      <i class="header-slogan-text">Интернет-магазин строительных материалов и инструментов для
-        ремонта</i>
-    </p>
+    <div class="header-middle-wrapper container">
+      <p class="header-slogan">
+        <i class="header-slogan-text">Интернет-магазин строительных материалов и инструментов для
+          ремонта</i>
+      </p>
 
-    <!-- Секция: Как нас найти -->
-    <div class="header-location">
-      <h2 class="header-location-title">Как нас найти</h2>
-      <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <!-- Секция: Как нас найти -->
+      <div class="header-location">
+        <h2 class="header-location-title">Как нас найти</h2>
+        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
+
+      <!-- Основное меню -->
+      <div class="login">
+        <a class="login-link" href="">Войти</a>
+        <a class="signup-link" href="">Регистрация</a>
+      </div>
     </div>
 
-    <!-- Основное меню -->
-    <div class="login">
-      <a class="login-link" href="">Войти</a>
-      <a class="signup-link" href="">Регистрация</a>
-    </div>
-
-    <nav class="main-nav">
+    <nav class="main-nav container">
       <ul class="list-reset main-nav-list">
         <li class="main-nav-item"><a class="main-nav-link" href="index.html">Главная</a></li>
         <li class="main-nav-item"><a class="main-nav-link" href="">Компания</a></li>

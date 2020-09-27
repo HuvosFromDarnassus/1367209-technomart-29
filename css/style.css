@@ -144,7 +144,6 @@ a {
   background-color: var(--basic-red);
 }
 
-/* Состояния: .button */
 .button:hover {
   background-color: var(--hover-button-red);
 }
@@ -157,7 +156,6 @@ a {
   background-color: var(--basic-green);
 }
 
-/* Состояния: .buy-button */
 .product-card-button-buy:hover {
   background-color: var(--success);
 }
@@ -171,12 +169,10 @@ a {
   background-color: transparent;
 }
 
-/* Состояния: .tomarks-button */
 .product-card-button-tomarks:hover {
   background-color: transparent;
 }
 
-/* TITLES */
 .title {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
@@ -190,14 +186,23 @@ a {
 }
 
 /* INDEX PAGE STYLES */
-/* HEADER */
 .header {
   font-family: "Cuprum", "Arial", sans-serif;
   background-color: var(--basic-background);
 }
 
-.header-top {
+.header-top-wrapper {
   background-color: var(--alt-background);
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 220px 271px 1fr;
+}
+
+.user-links-wrapper {
+  display: flex;
+  justify-self: flex-end;
 }
 
 .marks-link,
@@ -217,15 +222,9 @@ a {
   background-color: var(--basic-green);
 }
 
-/* Состояния: .marks-link,
-.cart-link,
-.checkout-link */
 .marks-link:hover,
 .cart-link:hover,
 .checkout-link:hover {
-  /* Добавил для будущих
-  изменений при наведений
-  (заранее) */
   color: var(--white);
 }
 
@@ -241,6 +240,11 @@ a {
 
 .checkout-link:active {
   background-color: var(--basic-green);
+}
+
+.header-middle-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-slogan-text {
@@ -294,9 +298,6 @@ a {
   color: var(--alt-grey);
 }
 
-/* Состояния: .orders,
-.personal-area,
-.authorized-user */
 .orders:hover,
 .personal-area:hover {
   color: var(--basic-red);
@@ -308,8 +309,6 @@ a {
   color: var(--basic-greylight);
 }
 
-/* Состояния: .login-link,
-.signup-link */
 .login-link:hover,
 .signup-link:hover {
   color: var(--basic-red);
@@ -322,6 +321,8 @@ a {
 
 .main-nav-list {
   background-color: var(--alt-grey);
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav-link {
@@ -331,11 +332,7 @@ a {
   color: var(--white);
 }
 
-/* Состояния: .main-site-nav-link */
 .main-nav-link:hover {
-  /* Добавил для будущих
-  изменений при наведений
-  (заранее) */
   color: var(--white);
   background-color: var(--alt-background);
 }
@@ -389,7 +386,6 @@ a {
   background-color: var(--active-link-white);
 }
 
-/* Состояния: .promo-item-link */
 .promo-item-link:hover {
   background-color: var(--basic-greylight);
 }
@@ -478,7 +474,6 @@ a {
   background-color: var(--alt-grey);
 }
 
-/* Состояния: .services-tab-link */
 .services-tab-link:hover {
   background-color: var(--alt-background);
 }
@@ -534,7 +529,6 @@ a {
   color: var(--basic-background);
 }
 
-/* Состояния: .footer-nav-link */
 .footer-nav-link:hover {
   text-decoration: underline;
 }
@@ -558,7 +552,6 @@ a {
   color: var(--special-yellowlight);
 }
 
-/* Состояния: .footer-extra-nav-link */
 .footer-extra-nav-link:hover {
   text-decoration: underline;
 }
@@ -596,8 +589,6 @@ a {
   color: var(--special-yellowlight);
 }
 
-/* Состояния: .feedback-link,
-.madeby-link */
 .feedback-link:hover,
 .madeby-link:hover {
   text-decoration: underline;
@@ -654,10 +645,6 @@ a {
   border-bottom: var(--basic-red) dotted 1px;
 }
 
-/* Состояния: .product-sort-link,
-.product-sort-more,
-.product-sort-less
- */
 .product-sort-link:hover {
   opacity: 1;
   border-bottom: var(--basic-red) solid 1px;
