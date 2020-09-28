@@ -27,6 +27,8 @@
   --active-nav-grey: #1d2739;
   --active-buy-button-green: #518534;
   --grey-lighten: #ffffff @0% rgba(255, 255, 255, 0) @100%;
+
+  --outline-block-viewer: 5px solid rgba(0, 255, 0, 0.7);
 }
 
 /* FONTS */
@@ -191,6 +193,7 @@ a {
 .header {
   font-family: "Cuprum", "Arial", sans-serif;
   background-color: var(--basic-background);
+  padding-bottom: 60px;
 }
 
 .header-top-wrapper {
@@ -250,6 +253,13 @@ a {
 .header-middle-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 21px;
+  margin-bottom: 22px;
+}
+
+.header-slogan {
+  width: 197px;
+  margin-left: 30px;
 }
 
 .header-slogan-text {
@@ -264,11 +274,17 @@ a {
   display: none;
 }
 
+.header-location {
+  margin: auto 0;
+}
+
 .header-phone {
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
   color: var(--basic-red);
+  padding: 7px 45px;
+  margin-left: 16px;
 }
 
 .header-adress {
@@ -276,6 +292,11 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--alt-grey);
+  margin: 0;
+}
+
+.login {
+  margin: auto 0;
 }
 
 .login-link,
@@ -285,6 +306,11 @@ a {
   line-height: 21px;
   color: var(--black);
   background-color: var(--white);
+  padding: 12px 24px;
+}
+
+.login-link {
+  margin: 6px;
 }
 
 .authorized-user {
@@ -328,6 +354,7 @@ a {
   background-color: var(--alt-grey);
   display: flex;
   justify-content: space-between;
+  padding: 16px 53px;
 }
 
 .main-nav-link {
@@ -335,6 +362,7 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--white);
+  padding: 16px 24px;
 }
 
 .main-nav-link:hover {
