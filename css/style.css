@@ -524,6 +524,11 @@ a {
 }
 
 /* SECTION: about */
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .about-main-title {
   color: var(--black);
 }
