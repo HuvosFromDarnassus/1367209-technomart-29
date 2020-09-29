@@ -183,8 +183,8 @@ a {
 
 .title-button {
   background-color: var(--title-background);
-  display: grid;
-  grid-template-columns: 1fr max-content;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* INDEX PAGE STYLES */
@@ -204,7 +204,6 @@ a {
 
 .user-links-wrapper {
   display: flex;
-  justify-self: flex-end;
 }
 
 .marks-link,
@@ -484,7 +483,7 @@ a {
 
 .services-tabs-wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 302px 1fr;
 }
 
 /* Скрыл для удобства */
@@ -530,6 +529,10 @@ a {
 }
 
 .about-main-title {
+  display: none;
+}
+
+.aboutus-main-title {
   color: var(--black);
 }
 
@@ -570,12 +573,12 @@ a {
 
 .footer-top-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 220px 1fr;
 }
 
 .footer-nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .footer-nav-link {
@@ -583,6 +586,7 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--basic-background);
+  margin-left: 30px;
 }
 
 .footer-nav-link:hover {
