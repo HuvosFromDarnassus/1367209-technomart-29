@@ -559,7 +559,7 @@ a {
 
 /* SECTION: popular-producers */
 .popular-producers {
-  margin-top: 59px;
+  margin-top: 70px;
 }
 
 .popular-producers-main-title {
@@ -587,11 +587,25 @@ a {
 /* SECTION: services */
 .services {
   background-color: var(--basic-background);
+  margin-top: 70px;
+  padding-top: 64px;
+  padding-bottom: 100px;
+}
+
+.services-main-title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.services-slogan {
+  width: 394px;
+  margin: 0;
+  margin-bottom: 49px;
 }
 
 .services-tabs-wrapper {
   display: grid;
-  grid-template-columns: 302px 1fr;
+  grid-template-columns: 285px 1fr;
 }
 
 /* Скрыл для удобства */
@@ -613,6 +627,20 @@ a {
   color: var(--black);
 }
 
+.services-content-list {
+  margin-left: 80px;
+}
+
+.services-content-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.services-content-text {
+  margin: 0;
+  width: 300px;
+}
+
 .services-tab-link {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
@@ -620,6 +648,9 @@ a {
   line-height: 30px;
   color: var(--white);
   background-color: var(--alt-grey);
+  display: block;
+  width: 240px;
+  padding: 13px 22px;
 }
 
 .services-tab-link:hover {
