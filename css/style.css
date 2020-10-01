@@ -525,7 +525,6 @@ a {
 }
 
 .product-img {
-  display: block;
   margin: auto;
 }
 
@@ -559,6 +558,10 @@ a {
 }
 
 /* SECTION: popular-producers */
+.popular-producers {
+  margin-top: 59px;
+}
+
 .popular-producers-main-title {
   color: var(--alt-grey);
 }
@@ -567,6 +570,18 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  margin-top: 20px;
+}
+
+.producer-img-link {
+  display: flex;
+  width: 220px;
+  height: 145px;
+  outline: 1px var(--basic-background) solid;
+}
+
+.producer-img {
+  margin: auto;
 }
 
 /* SECTION: services */
