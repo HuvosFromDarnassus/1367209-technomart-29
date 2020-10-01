@@ -191,15 +191,18 @@ a {
 .header {
   font-family: "Cuprum", "Arial", sans-serif;
   background-color: var(--basic-background);
+  padding-bottom: 60px;
 }
 
 .header-top-wrapper {
   background-color: var(--alt-background);
+  height: 42px;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
+  height: 42px;
 }
 
 .user-links-wrapper {
@@ -213,6 +216,8 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--white);
+  margin-left: 7px;
+  padding: 9px 19px;
 }
 
 .filled-cart {
@@ -246,6 +251,16 @@ a {
 .header-middle-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  margin-top: 43px;
+  margin-bottom: 43px;
+  padding: 0;
+}
+
+.header-slogan {
+  width: 197px;
+  margin: 0;
+  margin-left: 30px;
 }
 
 .header-slogan-text {
@@ -254,6 +269,13 @@ a {
   line-height: 23px;
   font-style: italic;
   color: var(--basic-red);
+}
+
+.header-location {
+  text-align: center;
+  width: 270px;
+  height: min-content;
+  margin: auto 0;
 }
 
 .header-location-title {
@@ -265,6 +287,8 @@ a {
   font-weight: 700;
   line-height: 30px;
   color: var(--basic-red);
+  border: var(--white) solid 3px;
+  padding: 5px 55px;
 }
 
 .header-adress {
@@ -272,6 +296,13 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--alt-grey);
+  margin: auto 0;
+  margin-top: 7px;
+}
+
+.login {
+  height: min-content;
+  margin: auto 0;
 }
 
 .login-link,
@@ -281,6 +312,7 @@ a {
   line-height: 21px;
   color: var(--black);
   background-color: var(--white);
+  padding: 12px 24px;
 }
 
 .authorized-user {
@@ -323,7 +355,8 @@ a {
 .main-nav-list {
   background-color: var(--alt-grey);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 16px 54px;
 }
 
 .main-nav-link {
@@ -331,6 +364,7 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--white);
+  padding: 16px 27px;
 }
 
 .main-nav-link:hover {
