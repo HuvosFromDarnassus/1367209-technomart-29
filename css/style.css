@@ -380,6 +380,7 @@ a {
 /* SECTION: promo */
 .promo {
   font-family: "Cuprum", "Arial", sans-serif;
+  margin-top: 59px;
 }
 
 .promo-list {
@@ -391,6 +392,11 @@ a {
 
 .promo-main-title {
   display: none;
+}
+
+.promo-item {
+  margin: 0;
+  padding: 20px 23px;
 }
 
 .promo-item:nth-child(1) {
@@ -417,6 +423,8 @@ a {
   font-weight: 700;
   line-height: 30px;
   color: var(--white);
+  margin: 0;
+  margin-bottom: 14px;
 }
 
 .promo-item-link {
@@ -426,6 +434,10 @@ a {
   color: var(--white);
   text-transform: uppercase;
   background-color: var(--active-link-white);
+  padding: 5px 0;
+  display: block;
+  width: 135px;
+  text-align: center;
 }
 
 .promo-item-link:hover {
