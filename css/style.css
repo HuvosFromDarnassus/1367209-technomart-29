@@ -144,6 +144,15 @@ a {
   background-color: var(--basic-red);
 }
 
+.slide-button,
+.popular-products-button,
+.popular-producers-button {
+  display: inline-block;
+  width: 192px;
+  padding: 9px 0;
+  text-align: center;
+}
+
 .button:hover {
   background-color: var(--hover-button-red);
 }
@@ -185,6 +194,9 @@ a {
   background-color: var(--title-background);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 14px;
 }
 
 /* INDEX PAGE STYLES */
