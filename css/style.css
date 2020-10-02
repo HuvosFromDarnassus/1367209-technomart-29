@@ -830,6 +830,7 @@ a {
 
 .footer-bottom {
   background-color: var(--alt-background);
+  margin-top: 54px;
   padding-top: 36px;
 }
 
