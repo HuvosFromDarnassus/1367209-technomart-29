@@ -146,7 +146,9 @@ a {
 
 .slide-button,
 .popular-products-button,
-.popular-producers-button {
+.popular-producers-button,
+.about-button,
+.contacts-button {
   display: inline-block;
   width: 192px;
   padding: 9px 0;
@@ -662,6 +664,10 @@ a {
 }
 
 /* SECTION: about */
+.about {
+  padding-bottom: 70px;
+}
+
 .about .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -673,6 +679,8 @@ a {
 
 .aboutus-main-title {
   color: var(--black);
+  margin: 0;
+  margin-top: 70px;
 }
 
 .about-desc {
@@ -681,6 +689,8 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--black);
+  margin: 0;
+  margin-top: 24px;
 }
 
 .about-item {
@@ -689,11 +699,38 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--black);
+  position: relative;
+  padding-left: 37px;
+}
+
+.about-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.about-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+}
+
+.contacts {
+  justify-self: end;
+}
+
+.about-button {
+  width: 220px;
+  margin-top: 20px;
 }
 
 /* SECTION: contacts */
 .contacts-main-title {
   color: var(--black);
+  margin: 0;
+  margin-top: 70px;
 }
 
 .contacts-desc {
@@ -702,6 +739,19 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--black);
+  margin: 0;
+  margin-top: 24px;
+}
+
+.contacts-map-link {
+  display: block;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.contacts-button {
+  width: 100%;
+  margin-top: 15px;
 }
 
 /* FOOTER */
