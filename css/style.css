@@ -142,13 +142,6 @@ a {
   color: var(--white);
   text-transform: uppercase;
   background-color: var(--basic-red);
-}
-
-.slide-button,
-.popular-products-button,
-.popular-producers-button,
-.about-button,
-.contacts-button {
   display: inline-block;
   width: 192px;
   padding: 9px 0;
@@ -201,8 +194,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 28px;
-  padding-right: 14px;
+  padding: 0 14px 0 28px;
 }
 
 /* INDEX PAGE STYLES */
@@ -214,13 +206,18 @@ a {
 
 .header-top-wrapper {
   background-color: var(--alt-background);
-  height: 42px;
+  min-height: 47px;
+}
+
+.header-logo,
+.footer-logo {
+  display: block;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
-  height: 42px;
+  min-height: 47px;
 }
 
 .user-links-wrapper {
@@ -234,8 +231,7 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--white);
-  margin-left: 7px;
-  padding: 9px 19px;
+  padding: 16px 19px;
 }
 
 .filled-cart {
@@ -269,7 +265,6 @@ a {
 .header-middle-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   margin-top: 43px;
   margin-bottom: 43px;
   padding: 0;
@@ -292,7 +287,6 @@ a {
 .header-location {
   text-align: center;
   width: 270px;
-  height: min-content;
   margin: auto 0;
 }
 
@@ -314,12 +308,10 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--alt-grey);
-  margin: auto 0;
-  margin-top: 7px;
+  margin-top: 7px 0 auto;
 }
 
 .login {
-  height: min-content;
   margin: auto 0;
 }
 
@@ -374,7 +366,7 @@ a {
   background-color: var(--alt-grey);
   display: flex;
   justify-content: space-around;
-  padding: 16px 54px;
+  padding: 17px 54px;
 }
 
 .main-nav-link {
@@ -382,7 +374,7 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--white);
-  padding: 16px 27px;
+  padding: 18.5px 27px;
 }
 
 .main-nav-link:hover {
@@ -398,7 +390,7 @@ a {
 /* SECTION: promo */
 .promo {
   font-family: "Cuprum", "Arial", sans-serif;
-  margin-top: 59px;
+  padding-top: 59px;
 }
 
 .promo-list {
@@ -413,7 +405,6 @@ a {
 }
 
 .promo-item {
-  margin: 0;
   padding: 20px 23px;
 }
 
@@ -452,9 +443,9 @@ a {
   color: var(--white);
   text-transform: uppercase;
   background-color: var(--active-link-white);
-  padding: 5px 0;
-  display: block;
-  width: 135px;
+  padding: 5px 23px;
+  display: inline-block;
+  min-width: 112px;
   text-align: center;
 }
 
@@ -494,13 +485,13 @@ a {
 /* SECTION: popular-products */
 .popular-products {
   font-family: "PT Sans", "Arial", sans-serif;
-  margin-top: 59px;
+  padding-top: 59px;
 }
 
 .popular-products-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 17px;
   margin-top: 20px;
 }
 
@@ -512,15 +503,15 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  outline: 1px var(--basic-background) solid;
-  padding: 6px 18px;
-  padding-bottom: 21px;
+  border: 1px var(--basic-background) solid;
+  padding: 6px 18px 21px;
+  min-height: 318px;
 }
 
 .product-img-wrapper {
   order: -1;
-  width: 184px;
-  height: 164px;
+  min-width: 184px;
+  min-height: 164px;
   margin: 0 auto;
   margin-bottom: 8px;
   display: flex;
@@ -561,7 +552,7 @@ a {
 
 /* SECTION: popular-producers */
 .popular-producers {
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .popular-producers-main-title {
@@ -577,8 +568,9 @@ a {
 
 .producer-img-link {
   display: flex;
-  width: 220px;
-  height: 145px;
+  min-width: 210px;
+  min-height: 135px;
+  padding: 5px;
   outline: 1px var(--basic-background) solid;
 }
 
@@ -711,7 +703,8 @@ a {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0px;
+  transform: translateY(-50%);
+  left: 0;
   width: 25px;
   height: 2px;
   background-color: var(--basic-red);
@@ -722,7 +715,7 @@ a {
 }
 
 .about-button {
-  width: 220px;
+  min-width: 220px;
   margin-top: 20px;
 }
 
@@ -730,7 +723,7 @@ a {
 .contacts-main-title {
   color: var(--black);
   margin: 0;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .contacts-desc {
@@ -746,7 +739,6 @@ a {
 .contacts-map-link {
   display: block;
   margin-top: 32px;
-  padding: 0;
 }
 
 .contacts-button {
@@ -763,17 +755,15 @@ a {
 .footer-top-wrapper {
   display: grid;
   grid-template-columns: 220px 1fr;
-  height: 68px;
+  align-items: end;
   padding: 0;
-  position: relative;
+  max-height: 68px;
 }
 
 .footer-nav-list {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  bottom: 7px;
-  right: 0;
+  margin-top: -35px;
 }
 
 .footer-nav-link {
