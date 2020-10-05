@@ -206,19 +206,27 @@ a {
 
 .header-top-wrapper {
   background-color: var(--alt-background);
-  max-height: 42px;
 }
 
 .header-logo,
 .footer-logo {
   display: flex;
   background-color: var(--basic-red);
-  border-bottom: 5px var(--error) solid;
 }
 
 .header-logo {
   width: 220px;
   height: 42px;
+  position: relative;
+}
+
+.header-logo::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 5px;
+  bottom: -5px;
+  background-color: var(--error);
 }
 
 .header-logo-img {
@@ -229,7 +237,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 42px;
 }
 
 .user-links-wrapper {
@@ -525,8 +532,8 @@ a {
   order: -1;
   margin: auto;
   object-fit: contain;
-  max-width: 184px;
-  max-height: 164px;
+  width: min-content;
+  height: min-content;
 }
 
 .product-card-title {
@@ -576,14 +583,16 @@ a {
 
 .producer-img-link {
   display: flex;
-  min-width: 210px;
-  min-height: 135px;
-  padding: 5px;
-  outline: 1px var(--basic-background) solid;
+  align-items: center;
+  justify-content: center;
+  height: 135px;
+  padding: 15px;
+  border: 1px var(--basic-background) solid;
 }
 
 .producer-img {
-  margin: auto;
+  object-fit: contain;
+  max-height: 100%;
 }
 
 /* SECTION: services */
@@ -763,6 +772,16 @@ a {
 .footer-logo {
   width: 220px;
   height: 63px;
+  position: relative;
+}
+
+.footer-logo::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 5px;
+  bottom: -5px;
+  background-color: var(--error);
 }
 
 .footer-logo-img {
