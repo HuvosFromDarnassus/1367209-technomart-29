@@ -336,6 +336,8 @@ a {
 }
 
 .login {
+  display: grid;
+  grid-template-rows: 1fr min-content;
   margin: auto 0;
 }
 
@@ -355,6 +357,18 @@ a {
   line-height: 21px;
   color: var(--black);
   background-color: var(--white);
+  margin: 0 auto;
+  padding: 12px 56px;
+}
+
+.logout {
+  display: none;
+}
+
+.orders-personal-wrapper {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .orders,
@@ -363,6 +377,22 @@ a {
   font-weight: 400;
   line-height: 18px;
   color: var(--alt-grey);
+  padding: 6px 13px;
+}
+
+.personal-area {
+  position: relative;
+}
+
+.personal-area::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--alt-grey);
 }
 
 .orders:hover,
