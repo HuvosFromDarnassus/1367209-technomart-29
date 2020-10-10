@@ -368,10 +368,10 @@ a {
   display: none;
 }
 
-.orders-personal-wrapper {
+.orders-personal-list {
   display: flex;
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
 }
 
 .orders,
@@ -383,15 +383,16 @@ a {
   padding: 6px 13px;
 }
 
-.personal-area {
+.personal-list-item {
   position: relative;
 }
 
-.personal-area::before {
+.personal-list-item:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 45%;
-  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -951,6 +952,10 @@ a {
 }
 
 /* CATALOG PAGE STYLES */
+.catalog-content-wrapper {
+  padding-bottom: 50px;
+}
+
 .crumbs-title-wrapper {
   display: grid;
 }
@@ -958,14 +963,14 @@ a {
 .catalog-product-title {
   background-color: var(--alt-title-background);
   color: var(--alt-grey);
-  margin-top: 20px;
+  margin: 0 0 20px 0;
   padding: 29px 0 29px 29px;
 }
 
 .bread-crumbs {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  padding: 20px 0 20px;
   order: -1;
 }
 
@@ -1062,11 +1067,8 @@ a {
 }
 
 .product-list {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   margin-top: 28px;
 }
@@ -1098,7 +1100,6 @@ a {
 .product-desc {
   font-family: "PT Sans", "Arial", sans-serif;
   background-color: var(--basic-background);
-  margin-top: 50px;
   padding: 64px 0 68px;
 }
 
