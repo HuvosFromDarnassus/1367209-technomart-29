@@ -242,6 +242,36 @@ a {
   align-items: center;
 }
 
+.logo-search-wrapper {
+  display: flex;
+}
+
+.search-wrapper {
+  padding: 0 0 0 42px;
+  position: relative;
+}
+
+.search-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 19px;
+  transform: translateY(75%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+  background-image: url(/img/icon-search.svg);
+}
+
+.main-search {
+  min-width: 229px;
+  min-height: 42px;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+
 .user-links-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -254,7 +284,8 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: var(--white);
-  padding: 9px 19px;
+  padding: 9px 23px;
+  position: relative;
 }
 
 .filled-cart {
@@ -263,6 +294,28 @@ a {
 
 .checkout-link {
   background-color: var(--basic-green);
+  padding: 9px 19px;
+}
+
+.marks-link::before,
+.cart-link::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  transform: translateY(35%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.marks-link::before {
+  background-image: url(/img/icon-bookmark.svg);
+}
+
+.cart-link::before {
+  background-image: url(/img/icon-cart.svg);
 }
 
 .marks-link:hover,
@@ -310,7 +363,7 @@ a {
 
 .header-location {
   text-align: center;
-  width: 270px;
+  min-width: 270px;
   margin: auto 0;
 }
 
@@ -324,7 +377,20 @@ a {
   line-height: 30px;
   color: var(--basic-red);
   border: var(--white) solid 3px;
-  padding: 5px 55px;
+  padding: 7px 45px 8px 75px;
+  position: relative;
+}
+
+.header-phone::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 39px;
+  transform: translateY(75%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(/img/icon-phone.svg);
 }
 
 .header-adress {
@@ -352,6 +418,23 @@ a {
   color: var(--black);
   background-color: var(--white);
   padding: 12px 24px;
+  position: relative;
+}
+
+.login-link {
+  padding: 12px 24px 12px 45px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  left: 19px;
+  transform: translateY(90%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(/img/icon-login.svg);
 }
 
 .authorized-user {
@@ -418,6 +501,10 @@ a {
 .login-link:active,
 .signup-link:active {
   color: var(--basic-greylight);
+}
+
+.main-nav-list {
+  border-bottom: 5px var(--active-nav-grey) solid;
 }
 
 .main-nav-list {
