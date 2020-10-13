@@ -838,6 +838,21 @@ a {
 }
 
 /* Скрыл для удобства */
+.services-content-item {
+  position: relative;
+}
+
+.services-content-item::before {
+  content: "";
+  position: absolute;
+  width: 468px;
+  height: 261px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(/img/services-img-1.png);
+}
+
 .services-content-item:not(:nth-child(1)) {
   display: none;
 }
