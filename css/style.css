@@ -1090,7 +1090,7 @@ a {
 .footer-bottom {
   background-color: var(--alt-background);
   margin-top: 54px;
-  padding-top: 36px;
+  padding: 36px 0 29px 0;
 }
 
 .footer-bottom .container {
@@ -1109,6 +1109,29 @@ a {
   line-height: 18px;
   color: var(--white);
   margin: 0;
+}
+
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials-item {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  color: inherit;
+  background-color: var(--active-nav-grey);
 }
 
 .feedback-madeby-wrapper {
