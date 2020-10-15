@@ -382,6 +382,33 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal modal-write-us">
+    <h2 class="modal-write-us-title visually-hidden">Напишите нам</h2>
+    <form class="write-us-form" action="" method="post">
+      <div class="write-us-name-mail-wrapper">
+        <p class="write-us-name-wrapper">
+          <label class="write-us-name-label" for="write-us-name">Ваше имя:</label>
+          <input class="write-us-input-name" id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us-mail-wrapper">
+          <label class="write-us-mail-label" for="write-us-mail">Ваш e-mail:</label>
+          <input class="write-us-input-mail" id="write-us-mail" type="mail" name="mail" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="write-us-message-wrapper">
+        <label class="write-us-message-label" for="wrie-us-user-text">Текст письма:</label>
+        <textarea class="write-us-user-text" name="write-us-user-text" id="wrie-us-user-text" cols="100%" rows="100%"
+          placeholder="В свободной форме"></textarea>
+      </p>
+      <div class="write-us-bottom">
+        <button class="button modal-write-us-button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="modal-close-button" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal modal-map"></section>
 </body>
 
 </html>

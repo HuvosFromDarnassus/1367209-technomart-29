@@ -1326,3 +1326,89 @@ a {
   line-height: 24px;
   color: var(--black);
 }
+
+/* MODALS */
+.modal {
+  /* display: none; */
+  color: var(--black);
+  background-color: var(--white);
+  background-image: url("img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-write-us {
+  width: 620px;
+  border-top: 7px var(--basic-red) solid;
+}
+
+.write-us-name-mail-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 460px;
+  margin: 0 auto;
+}
+
+.write-us-name-wrapper,
+.write-us-mail-wrapper,
+.write-us-message-wrapper {
+  display: grid;
+  margin: 0;
+}
+
+.write-us-name-wrapper,
+.write-us-mail-wrapper {
+  margin-top: 46px;
+}
+
+.write-us-message-wrapper {
+  justify-content: space-around;
+  margin-top: 13px;
+}
+
+.write-us-name-label,
+.write-us-mail-label,
+.write-us-message-label {
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.write-us-input-name,
+.write-us-input-mail {
+  min-width: 200px;
+  min-height: 18px;
+  border: 2px var(--basic-greylight) solid;
+  border-radius: 3px;
+  padding: 7px 8px 7px 12px;
+}
+
+.write-us-user-text {
+  max-width: 440px;
+  max-height: 100px;
+  border: 2px var(--basic-greylight) solid;
+  border-radius: 3px;
+  padding: 7px 8px 7px 12px;
+}
+
+.write-us-bottom {
+  width: 100%;
+  margin-top: 37px;
+  padding: 37px 0 37px;
+  background-color: var(--basic-background);
+}
+
+.modal-write-us-button {
+  display: block;
+  width: 465px;
+  border: none;
+  margin: auto auto;
+}
+
+.modal-close-button {
+  /* Скрыл для удобства */
+  display: none;
+  position: absolute;
+}
