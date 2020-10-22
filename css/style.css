@@ -30,6 +30,14 @@
   --shadow-black: rgba(0, 0, 0, 0.3);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
 /* FONTS */
 
 /* Cuprum-Regular */
@@ -564,7 +572,7 @@ a {
 .promo-item:nth-child(1)::before {
   content: "New";
   position: absolute;
-  width: 39px;
+  width: 100px;
   height: 0;
   transform: translate(50%) rotate(45deg);
   transform-origin: center top;
@@ -778,7 +786,7 @@ a {
   display: none;
   font-family: "Cuprum", "Arial", sans-serif;
   position: absolute;
-  width: 39px;
+  width: 100px;
   height: 0;
   transform: translate(50%) rotate(45deg);
   transform-origin: center top;
@@ -884,13 +892,17 @@ a {
 
 .services-tabs-wrapper {
   display: grid;
-  grid-template-columns: 285px 1fr;
+  grid-template-columns: 240px 1fr;
   position: relative;
 }
 
 .services-tabs-list {
   position: relative;
-  width: 240px;
+  width: min-content;
+}
+
+.services-tab-link {
+  min-width: 240px;
 }
 
 .services-tabs-list::before {
@@ -1283,7 +1295,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 19px;
+  padding: 10px 10px;
 }
 
 .product-sort-title {
