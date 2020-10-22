@@ -260,10 +260,6 @@ a {
   align-items: center;
 }
 
-.logo-search-wrapper {
-  display: flex;
-}
-
 .main-search-btn {
   width: 17px;
   height: 17px;
@@ -1349,6 +1345,10 @@ a {
   margin-top: 28px;
 }
 
+.products-item {
+  position: relative;
+}
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
@@ -1396,7 +1396,6 @@ a {
   /* display: none; */
   color: var(--black);
   background-color: var(--white);
-  background-image: url("img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 10px 10px var(--shadow-black);
