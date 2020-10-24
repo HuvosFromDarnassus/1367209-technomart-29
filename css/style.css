@@ -1297,8 +1297,33 @@ a {
   line-height: 18px;
   color: var(--black);
   text-transform: uppercase;
-  margin-right: 15px;
-  padding: 0 16px;
+  padding: 0 16px 0 23px;
+}
+
+.tohome-link {
+  padding: 0;
+  margin-right: 29px;
+}
+
+.bread-crumbs-item {
+  position: relative;
+}
+
+.bread-crumbs-item::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-image: url("../img/icon-right-small.svg");
+}
+
+.bread-crumbs-item:nth-child(1)::before {
+  width: 14px;
+  height: 12px;
+  background-image: url("../img/icon-home.svg");
 }
 
 .filter-sort-product-wrapper {
