@@ -453,8 +453,9 @@ a {
   color: var(--black);
   background-color: var(--white);
   margin: 0 auto;
-  padding: 12px 56px;
+  padding: 12px 53px;
   position: relative;
+  margin-right: 10px;
 }
 
 .authorized-user::before,
@@ -859,9 +860,20 @@ a {
   color: var(--white);
   text-decoration: none;
   background-color: var(--basic-red);
-  width: 141px;
+  min-width: 102px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px 25px;
+  position: relative;
+}
+
+.product-card-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -39px;
+  transform: translateY(-50%);
+  border: 19px solid transparent;
+  border-left: 20px solid var(--basic-red);
 }
 
 /* SECTION: popular-producers */
@@ -1377,11 +1389,6 @@ a {
   border-bottom: var(--basic-red) solid 1px;
 }
 
-.product-sort-more:hover,
-.product-sort-less:hover {
-  opacity: 1;
-}
-
 .product-sort-link:active {
   color: var(--basic-red);
   opacity: 1;
@@ -1390,7 +1397,34 @@ a {
 
 .product-sort-more,
 .product-sort-less {
-  margin-left: 20px;
+  opacity: 1;
+  border: none;
+}
+
+.product-sort-more {
+  margin-left: 46px;
+}
+
+.product-sort-less {
+  margin-left: 21px;
+  margin-right: 5px;
+}
+
+.product-sort-more:hover,
+.product-sort-more:active,
+.product-sort-less:hover,
+.product-sort-less:active {
+  border: none;
+}
+
+.product-sort-more.sortActive path,
+.product-sort-less.sortActive path {
+  fill: var(--basic-red);
+}
+
+.product-sort-more:hover path,
+.product-sort-less:hover path {
+  fill: var(--black);
 }
 
 .product-sort-more:active,
@@ -1528,4 +1562,53 @@ a {
   width: 943px;
   height: 447px;
   border-top: 7px var(--basic-red) solid;
+}
+
+/* CART */
+
+.catalog-modal-cart {
+  width: 620px;
+  border-top: 7px var(--basic-red) solid;
+}
+
+.modal-cart-message {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--black);
+  text-align: center;
+  margin: 0;
+  padding: 60px 0;
+  position: relative;
+}
+
+.modal-cart-message::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 81px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/icon-modal-cart-mark.svg");
+}
+
+.modal-cart-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 37px 105px;
+  margin: 0 auto;
+  background-color: var(--basic-background);
+}
+
+.cart-checkout-button,
+.cart-continue-button {
+  border: none;
+}
+
+.cart-continue-button {
+  background-color: var(--white);
+  color: var(--black);
 }

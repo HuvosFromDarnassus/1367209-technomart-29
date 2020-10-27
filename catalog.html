@@ -113,10 +113,20 @@
                 <a class="product-sort-link" href="">По функционалу</a>
               </li>
               <li class="product-sort-item">
-                <a class="product-sort-link product-sort-more" href="">Больше</a>
+                <a class="product-sort-link product-sort-more sortActive" href="">
+                  <span class="visually-hidden">Больше</span>
+                  <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.7 0l5.5 10H.2" fill="#C5C5C5" /></svg>
+                </a>
               </li>
               <li class="product-sort-item">
-                <a class="product-sort-link product-sort-less" href="">Меньше</a>
+                <a class="product-sort-link product-sort-less" href="">
+                  <span class="visually-hidden">Меньше</span>
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.66241 10L0.162415 0H11.1624" fill="#C5C5C5" />
+                  </svg>
+
+                </a>
               </li>
             </ul>
           </section>
@@ -130,7 +140,7 @@
                   <h3 class="product-card-title">Перфоратор BOSCH BFG 6000</h3>
                   <img class="product-img" src="img/popular-product-img-3.jpg" width="184" height="164"
                     alt="Товар перфоратор модели BOSCH BFG 9000">
-                  <del class="product-card-old-price">3500 Р.</del>
+                  <del class="product-card-old-price">35000 Р.</del>
                   <ins class="product-card-price">25500 Р.</ins>
                   <a class="button product-card-button-buy" href="">Купить</a>
                   <a class="button product-card-button-tomarks" href="">В закладки</a>
@@ -332,6 +342,19 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal catalog-modal-cart">
+    <h2 class="visually-hidden modal-cart-title">Добавление товара в карзину</h2>
+
+    <p class="modal-cart-message">Товар добавлен в карзину!</p>
+
+    <form class="modal-cart-form" action="" method="post">
+      <button class="button cart-checkout-button" type="button">Оформить заказ</button>
+      <button class="button cart-continue-button" type="button">Продолжить покупки</button>
+    </form>
+
+    <button class="modal-close-button" type="button"></button>
+  </section>
 </body>
 
 </html>
