@@ -416,6 +416,7 @@ a {
 .catalog-login {
   display: grid;
   grid-template-rows: 1fr min-content;
+  position: relative;
 }
 
 .login-link,
@@ -458,8 +459,7 @@ a {
   margin-right: 10px;
 }
 
-.authorized-user::before,
-.authorized-user::after {
+.authorized-user::before {
   position: absolute;
   content: "";
   width: 20px;
@@ -473,13 +473,14 @@ a {
   background-image: url("../img/icon-user.svg");
 }
 
-.authorized-user::after {
-  right: 14px;
-  background-image: url("../img/icon-login.svg");
-}
-
 .logout {
-  display: none;
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  right: 25px;
+  top: 30%;
+  transform: translateY(-30%);
+  background-image: url("../img/icon-login.svg");
 }
 
 .orders-personal-list {
@@ -870,7 +871,7 @@ a {
   content: "";
   position: absolute;
   top: 50%;
-  right: -39px;
+  left: 100%;
   transform: translateY(-50%);
   border: 19px solid transparent;
   border-left: 20px solid var(--basic-red);
@@ -1417,8 +1418,8 @@ a {
   border: none;
 }
 
-.product-sort-more.sortActive path,
-.product-sort-less.sortActive path {
+.product-sort-more.sort-active path,
+.product-sort-less.sort-active path {
   fill: var(--basic-red);
 }
 
@@ -1594,7 +1595,7 @@ a {
   background-image: url("../img/icon-modal-cart-mark.svg");
 }
 
-.modal-cart-form {
+.modal-cart-bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
