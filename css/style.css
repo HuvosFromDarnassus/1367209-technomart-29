@@ -447,6 +447,13 @@ a {
   background-image: url("../img/icon-login.svg");
 }
 
+.user-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  position: relative;
+}
+
 .authorized-user {
   font-size: 21px;
   font-weight: 400;
@@ -454,9 +461,8 @@ a {
   color: var(--black);
   background-color: var(--white);
   margin: 0 auto;
-  padding: 12px 53px;
+  padding: 12px 0px 12px 53px;
   position: relative;
-  margin-right: 10px;
 }
 
 .authorized-user::before {
@@ -474,13 +480,13 @@ a {
 }
 
 .logout {
-  position: absolute;
   width: 20px;
   height: 18px;
-  right: 25px;
-  top: 30%;
-  transform: translateY(-30%);
+  margin: auto;
+  padding: 22px 17px 23px 20px;
   background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .orders-personal-list {
