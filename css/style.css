@@ -1751,19 +1751,22 @@ a {
 
 /* MODALS */
 .modal {
-  /* display: none; */
+  display: none;
   color: var(--black);
   background-color: var(--white);
   background-position: 0 0;
   background-repeat: repeat;
-  box-shadow: 0 10px 10px var(--shadow-black);
-  position: relative;
+  box-shadow: 0 5px 12px var(--shadow-black);
+  position: absolute;
 }
 
 /* Write Us */
 .modal-write-us {
   width: 620px;
   border-top: 7px var(--basic-red) solid;
+  top: 2369px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .write-us-form {
@@ -1814,9 +1817,18 @@ a {
 }
 
 .modal-close-button {
-  /* Скрыл для удобства */
-  display: none;
   position: absolute;
+  top: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  margin: 14px 11px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /* Map */
@@ -1824,6 +1836,9 @@ a {
 .modal-map {
   width: 943px;
   height: 447px;
+  top: 2369px;
+  left: 50%;
+  transform: translateX(-50%);
   border-top: 7px var(--basic-red) solid;
 }
 
@@ -1831,6 +1846,9 @@ a {
 
 .catalog-modal-cart {
   width: 620px;
+  top: 655px;
+  left: 50%;
+  transform: translateX(-50%);
   border-top: 7px var(--basic-red) solid;
 }
 
@@ -1874,4 +1892,14 @@ a {
 .cart-continue-button {
   background-color: var(--white);
   color: var(--black);
+}
+
+.cart-continue-button:hover {
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+
+.cart-continue-button:active {
+  background-color: var(--error);
+  color: var(--white);
 }
