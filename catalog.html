@@ -94,8 +94,88 @@
       <div class="filter-sort-product-wrapper">
         <!-- Фильтр товаров -->
         <section class="product-filter">
-          <h2 class="product-filter-title visually-hidden">Фильтр товаров</h2>
-          <!-- Здесь будет форма фильтра -->
+          <h2 class="product-filter-title">Фильтр:</h2>
+
+          <form class="filter-price-slider" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-price">
+              <legend class="filter-legend">Цена:</legend>
+
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      width: 70%;
+                      margin-left: 10%;
+                      "></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                  left: 9%;
+                  "></div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                  left: 73%;
+                  "></div>
+                </div>
+
+                <div class="price-controls">
+                  <input class="min-price" type="number" name="min-price" value="0">
+                  <span class="price-del">-</span>
+                  <input class="max-price" type="number" name="mxa-price" value="30000">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-producers">
+
+              <legend class="filter-legend">Производители:</legend>
+              <ul class="list-reset filter-list">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch"
+                    id="filter-bosch" checked>
+                  <label class="filter-label" for="filter-bosch">Bosch</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol"
+                    id="filter-interscol">
+                  <label class="filter-label" for="filter-interscol">Интерскол</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita"
+                    id="filter-makita" checked>
+                  <label class="filter-label" for="filter-makita">Makita</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt"
+                    id="filter-dewalt">
+                  <label class="filter-label" for="filter-dewalt">DeWalt</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi"
+                    id="filter-hitachi">
+                  <label class="filter-label" for="filter-hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter-power-supply">
+              <legend class="filter-legend">Питание:</legend>
+              <ul class="list-reset filter-list">
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                    value="accumulating" id="filter-accumulator" checked>
+                  <label class="filter-label" for="filter-accumulator">Аккумуляторные</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                    value="hair-mains" id="filter-mains">
+                  <label class="filter-label" for="filter-mains">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
+          </form>
+
         </section>
 
         <div class="sort-product-wrapper">
@@ -117,14 +197,14 @@
               <li class="product-sort-item">
                 <a class="product-sort-link product-sort-more sort-active" href="">
                   <span class="visually-hidden">Больше</span>
-                  <svg width="12" height="10" fill="#C5C5C5"">
+                  <svg width="12" height="10" fill="#C5C5C5">
                     <path d=" M5.7 0l5.5 10H.2" /></svg>
                 </a>
               </li>
               <li class="product-sort-item">
                 <a class="product-sort-link product-sort-less" href="">
                   <span class="visually-hidden">Меньше</span>
-                  <svg width="12" height="10" viewBox="0 0 12 10" fill="#C5C5C5"">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="#C5C5C5">
                     <path d=" M5.66241 10L0.162415 0H11.1624" />
                   </svg>
 
@@ -247,7 +327,7 @@
                 <a class="pagination-link" href="">3</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="">Следующая</a>
+                <a class="pagination-link pagination-next" href="">Следующая</a>
               </li>
             </ul>
           </section>
@@ -315,15 +395,14 @@
           <!-- Секция: Ссылки на соцсети -->
           <h2 class="socials-title visually-hidden">Давайте дружить!</h2>
           <ul class="list-reset socials-list">
-            <li class="socials-item"><a class="socials-link vk-link" href=""><img src="img/icon-vk.svg" alt="Вконтакте">
-                </svg></a>
+            <li class="socials-item"><a class="socials-link vk-link" href=""><img src="img/icon-vk.svg"
+                  alt="Вконтакте"></a>
             </li>
-            <li class="socials-item"><a class="socials-link fb-link" href=""><img src="img/icon-fb.svg" alt="Facebook">
-                </svg></a>
+            <li class="socials-item"><a class="socials-link fb-link" href=""><img src="img/icon-fb.svg"
+                  alt="Facebook"></a>
             </li>
             <li class="socials-item"><a class="socials-link ig-link" href=""><img src="img/icon-insta.svg"
-                  alt="Instagram">
-                </svg></a>
+                  alt="Instagram"></a>
             </li>
           </ul>
         </div>
