@@ -96,8 +96,8 @@
         <section class="product-filter">
           <h2 class="product-filter-title">Фильтр:</h2>
 
-          <form class="filter-price-slider" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter-price">
+          <form class="filter-price-slider" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+            <fieldset class="filter-fieldset filter-price">
               <legend class="filter-legend">Цена:</legend>
 
               <div class="range-filter">
@@ -118,15 +118,13 @@
 
                 <div class="price-controls">
                   <input class="min-price" type="number" name="min-price" value="0">
-                  <span class="price-del">-</span>
-                  <input class="max-price" type="number" name="mxa-price" value="30000">
+                  <span class="price-del">&#45;</span>
+                  <input class="max-price" type="number" name="max-price" value="30000">
                 </div>
               </div>
             </fieldset>
-          </form>
 
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-producers">
+            <fieldset class="filter-fieldset filter-producers">
 
               <legend class="filter-legend">Производители:</legend>
               <ul class="list-reset filter-list">
@@ -158,7 +156,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="filter-power-supply">
+            <fieldset class="filter-fieldset filter-power-supply">
               <legend class="filter-legend">Питание:</legend>
               <ul class="list-reset filter-list">
                 <li class="filter-option filter-radio">
@@ -168,14 +166,13 @@
                 </li>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
-                    value="hair-mains" id="filter-mains">
+                    value="filter-mains" id="filter-mains">
                   <label class="filter-label" for="filter-mains">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
             <button type="submit" class="filter-button button">Показать</button>
           </form>
-
         </section>
 
         <div class="sort-product-wrapper">

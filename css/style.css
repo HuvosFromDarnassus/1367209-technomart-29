@@ -881,13 +881,15 @@ a {
   padding: 10px 29px;
   position: relative;
   border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .product-card-price::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 99%;
+  left: 100%;
   transform: translateY(-50%);
   border: 19px solid transparent;
   border-left: 20px solid var(--basic-red);
@@ -1392,9 +1394,7 @@ a {
   width: 220px;
 }
 
-.filter-price,
-.filter-producers,
-.filter-power-supply {
+.filter-fieldset  {
   padding: 0;
   margin: 0;
   border: none;
@@ -1463,22 +1463,21 @@ a {
 
 .min-price,
 .max-price {
-  box-sizing: content-box;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
   color: var(--black);
   text-transform: uppercase;
-  width: 75px;
+  width: 100px;
   padding: 8px 10px;
   text-align: center;
   border: none;
   border-radius: 5px;
   background-color: var(--options-background);
+  position: relative;
 }
 
-/* Убрал гадские стрелочки у числового input */
 .min-price::-webkit-outer-spin-button,
 .max-price::-webkit-outer-spin-button,
 .min-price::-webkit-inner-spin-button,
@@ -1491,7 +1490,6 @@ a {
 .max-price[type="number"] {
   -moz-appearance: textfield;
 }
-/* ========================================== */
 
 .filter-producers {
   margin: 14px 0;
@@ -1524,33 +1522,39 @@ a {
   display: block;
   cursor: pointer;
   user-select: none;
+  padding-left: 35px;
 }
 
 .filter-input-checkbox + .filter-label::before {
   content: "";
   position: absolute;
-  left: -45px;
+  left: 0;
   top: 0;
   width: 23px;
   height: 23px;
-  border: 2px var(--alt-grey-light) solid;
+  border: 3px var(--basic-greylight) solid;
   border-radius: 3px;
-}
-
-.filter-input-checkbox + .filter-label::before:hover {
-  border-color: var(--black);
 }
 
 .filter-input-checkbox:checked + .filter-label::after {
   content: "";
   position: absolute;
   top: 0px;
-  left: -39px;
+  left: 6px;
   width: 22px;
   height: 17px;
   background-image: url("../img/filter-checkbox-checked-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-label:hover::before {
+  border-color: var(--filter-active-grey);
+}
+
+.filter-input-checkbox:disabled + .filter-label,
+.filter-input-checkbox:disabled + .filter-label::before {
+  opacity: 0.3;
 }
 
 .filter-power-supply {
@@ -1560,11 +1564,12 @@ a {
 .filter-input-radio + .filter-label::before {
   content: "";
   position: absolute;
-  left: -45px;
-  top: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 25px;
   height: 25px;
-  border: 4px var(--alt-grey-light) solid;
+  border: 4px var(--basic-greylight) solid;
   border-radius: 50%;
 }
 
@@ -1572,17 +1577,25 @@ a {
   content: "";
   position: absolute;
   top: 50%;
-  transform: translateY(-34%);
-  left: -21%;
+  transform: translateY(-50%);
+  left: 8px;
   width: 10px;
   height: 10px;
-  background-color: var(--alt-grey-light);
+  background-color: var(--basic-greylight);
   border-radius: 50%;
+}
+
+.filter-input-radio + .filter-label:hover::before {
+  border-color: var(--filter-active-grey);
+}
+
+.filter-input-radio:disabled + .filter-label,
+.filter-input-radio:disabled + .filter-label::before {
+  opacity: 0.3;
 }
 
 .filter-option {
   margin-bottom: 19px;
-  padding-left: 45px;
 }
 
 .filter-button {
@@ -1757,14 +1770,14 @@ a {
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 5px 12px var(--shadow-black);
-  position: absolute;
+  position: fixed;
 }
 
 /* Write Us */
 .modal-write-us {
   width: 620px;
   border-top: 7px var(--basic-red) solid;
-  top: 2369px;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1836,7 +1849,7 @@ a {
 .modal-map {
   width: 943px;
   height: 447px;
-  top: 2369px;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
   border-top: 7px var(--basic-red) solid;
