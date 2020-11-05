@@ -1887,7 +1887,6 @@ a {
 
 /* Write Us */
 .modal-write-us {
-  display: block;
   width: 620px;
   border-top: 7px var(--basic-red) solid;
   top: 50%;
