@@ -1,7 +1,7 @@
-var mapOpen = document.querySelector(".contacts-map-link");
-var mapClose = document.querySelector(".map-close");
+const mapOpen = document.querySelector(".contacts-map-link");
+const mapClose = document.querySelector(".map-close");
 
-var mapPopup = document.querySelector(".modal-map");
+const mapPopup = document.querySelector(".modal-map");
 
 mapOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -16,8 +16,7 @@ mapClose.addEventListener("click", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-  // Почему keyCode перечеркивает ???
-  if (evt.keyCode === 27) {
+  if (evt.key === 'Escape') {
     if (mapPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       mapPopup.classList.remove("modal-show");

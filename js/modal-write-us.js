@@ -1,15 +1,15 @@
-var writeusOpen = document.querySelector(".contacts-button");
-var writeUsClose = document.querySelector(".write-us-close");
+const writeusOpen = document.querySelector(".contacts-button");
+const writeUsClose = document.querySelector(".write-us-close");
 
-var writeUsPopup = document.querySelector(".modal-write-us");
+const writeUsPopup = document.querySelector(".modal-write-us");
 
-var writeUsForm = document.querySelector(".write-us-form");
-var writeUsName = document.querySelector(".write-us-name");
-var writeUsMail = document.querySelector(".write-us-mail");
-var writeUsText = document.querySelector(".write-us-user-text");
+const writeUsForm = document.querySelector(".write-us-form");
+const writeUsName = document.querySelector(".write-us-name");
+const writeUsMail = document.querySelector(".write-us-mail");
+const writeUsText = document.querySelector(".write-us-user-text");
 
-var isStrorageSupport = true;
-var storage = "";
+let isStrorageSupport = true;
+let storage = "";
 
 try {
   storage = localStorage.getItem("mail");
@@ -52,7 +52,7 @@ writeUsForm.addEventListener("submit", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+  if (evt.key === 'Escape') {
     if (writeUsPopup.classList.contains("modal-show")) {
       evt.preventDefault();
 

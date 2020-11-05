@@ -1,10 +1,10 @@
-var cartOpen = document.querySelectorAll(".product-card-button-buy");
-var cartClose = document.querySelector(".cart-close");
-var cartContinue = document.querySelector(".cart-continue-button");
+const cartOpen = document.querySelectorAll(".product-card-button-buy");
+const cartClose = document.querySelector(".cart-close");
+const cartContinue = document.querySelector(".cart-continue-button");
 
-var cartPopup = document.querySelector(".modal-cart");
+const cartPopup = document.querySelector(".modal-cart");
 
-for (var i = 0; i < cartOpen.length; i++) {
+for (let i = 0; i < cartOpen.length; i++) {
   cartOpen[i].addEventListener("click", function (evt) {
     evt.preventDefault();
 
@@ -25,7 +25,7 @@ cartContinue.addEventListener("click", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+  if (evt.key === 'Escape') {
     if (cartPopup.classList.contains("modal-show")) {
       cartPopup.classList.remove("modal-show");
     }
