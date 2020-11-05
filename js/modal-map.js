@@ -16,6 +16,7 @@ mapClose.addEventListener("click", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
+  // Почему keyCode перечеркивает ???
   if (evt.keyCode === 27) {
     if (mapPopup.classList.contains("modal-show")) {
       evt.preventDefault();
