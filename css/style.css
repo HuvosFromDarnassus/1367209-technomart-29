@@ -324,6 +324,11 @@ a {
   width: 100%;
 }
 
+.main-search:focus {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .marks-link,
 .cart-link,
 .checkout-link {
@@ -628,6 +633,7 @@ a {
 .promo-item {
   padding: 20px 23px;
   position: relative;
+  overflow: hidden;
 }
 
 .promo-item:nth-child(1) {
@@ -825,6 +831,7 @@ a {
 .popular-products-item {
   position: relative;
   width: 220px;
+  overflow: hidden;
 }
 
 .popular-products-main-title {
@@ -855,12 +862,14 @@ a {
   position: absolute;
   width: 135px;
   height: 120px;
-  top: 12%;
+  top: 38px;
   left: 50%;
   transform: translateY(-12%);
   transform: translateX(-50%);
   white-space: normal;
   clip: unset;
+  clip-path: none;
+  overflow: unset;
 }
 
 .product-card:hover .product-card-buttons-wrapper {
@@ -873,20 +882,16 @@ a {
   content: "New";
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 33px;
+  padding: 4px 64px 3px;
   text-transform: uppercase;
   position: absolute;
-  width: 95px;
-  height: 0;
   transform: translate(50%) rotate(45deg);
   transform-origin: center top;
   top: 13px;
   right: 13px;
   text-align: center;
   color: var(--white);
-  border-bottom: 30px solid var(--basic-red);
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
+  background-color: var(--basic-red);
 }
 
 .product-img {
@@ -1777,6 +1782,7 @@ a {
 
 .products-item {
   position: relative;
+  overflow: hidden;
 }
 
 .pagination {
