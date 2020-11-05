@@ -1,4 +1,3 @@
-// ЖабаСкрипт
 const writeusOpen = document.querySelector(".contacts-button");
 const writeUsClose = document.querySelector(".write-us-close");
 
