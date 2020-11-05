@@ -19,7 +19,7 @@
 
         <form class="search-form">
           <button class="main-search-btn" type="submit"><span class="visually-hidden">Найти</span></button>
-          <input class="main-search" type="text" placeholder="Поиск:" id="search-input">
+          <input class="main-search" type="search" placeholder="Поиск:" id="search-input">
           <label class="visually-hidden" for="search-input">Введите название товара или раздела</label>
         </form>
 
@@ -132,8 +132,10 @@
                 alt="Товар перфоратор модели BOSCH BFG 9000">
               <del class="product-card-old-price">32500 Р.</del>
               <ins class="product-card-price">25500 Р.</ins>
-              <a class="button product-card-button-buy" href="">Купить</a>
-              <a class="button product-card-button-tomarks" href="">В закладки</a>
+              <div class="product-card-buttons-wrapper visually-hidden">
+                <a class="button product-card-button-buy" href="">Купить</a>
+                <a class="button product-card-button-tomarks" href="">В закладки</a>
+              </div>
             </article>
           </li>
           <li class="popular-products-item new">
@@ -143,8 +145,10 @@
                 alt="Товар перфоратор модели BOSCH BFG 3000">
               <del class="product-card-old-price">22500 Р.</del>
               <ins class="product-card-price">15500 Р.</ins>
-              <a class="button product-card-button-buy" href="">Купить</a>
-              <a class="button product-card-button-tomarks" href="">В закладки</a>
+              <div class="product-card-buttons-wrapper visually-hidden">
+                <a class="button product-card-button-buy" href="">Купить</a>
+                <a class="button product-card-button-tomarks" href="">В закладки</a>
+              </div>
             </article>
           </li>
           <li class="popular-products-item">
@@ -154,8 +158,10 @@
                 alt="Товар перфоратор модели BOSCH BFG 6000">
               <del class="product-card-old-price">30500 Р.</del>
               <ins class="product-card-price">25500 Р.</ins>
-              <a class="button product-card-button-buy" href="">Купить</a>
-              <a class="button product-card-button-tomarks" href="">В закладки</a>
+              <div class="product-card-buttons-wrapper visually-hidden">
+                <a class="button product-card-button-buy" href="">Купить</a>
+                <a class="button product-card-button-tomarks" href="">В закладки</a>
+              </div>
             </article>
           </li>
           <li class="popular-products-item new">
@@ -165,8 +171,10 @@
                 alt="Товар перфоратор модели BOSCH BFG 2000">
               <del class="product-card-old-price">22500 Р.</del>
               <ins class="product-card-price">12500 Р.</ins>
-              <a class="button product-card-button-buy" href="">Купить</a>
-              <a class="button product-card-button-tomarks" href="">В закладки</a>
+              <div class="product-card-buttons-wrapper visually-hidden">
+                <a class="button product-card-button-buy" href="">Купить</a>
+                <a class="button product-card-button-tomarks" href="">В закладки</a>
+              </div>
             </article>
           </li>
         </ul>
@@ -354,15 +362,14 @@
           <!-- Секция: Ссылки на соцсети -->
           <h2 class="socials-title visually-hidden">Давайте дружить!</h2>
           <ul class="list-reset socials-list">
-            <li class="socials-item"><a class="socials-link vk-link" href=""><img src="img/icon-vk.svg" alt="Вконтакте">
-                </svg></a>
+            <li class="socials-item"><a class="socials-link vk-link" href=""><img src="img/icon-vk.svg"
+                  alt="Вконтакте"></a>
             </li>
-            <li class="socials-item"><a class="socials-link fb-link" href=""><img src="img/icon-fb.svg" alt="Facebook">
-                </svg></a>
+            <li class="socials-item"><a class="socials-link fb-link" href=""><img src="img/icon-fb.svg"
+                  alt="Facebook"></a>
             </li>
             <li class="socials-item"><a class="socials-link ig-link" href=""><img src="img/icon-insta.svg"
-                  alt="Instagram">
-                </svg></a>
+                  alt="Instagram"></a>
             </li>
           </ul>
         </div>
@@ -386,34 +393,57 @@
 
   <section class="modal modal-write-us">
     <h2 class="modal-write-us-title visually-hidden">Напишите нам</h2>
-    <form class="write-us-form" action="" method="post">
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <ul class="list-reset write-us-form-list">
         <li class="write-us-list-item">
           <label class="write-us-label" for="write-us-name">Ваше имя:</label>
-          <input class="write-us-input" id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="write-us-input write-us-name" id="write-us-name" type="text" name="name"
+            placeholder="Имя Фамилия">
         </li>
         <li class="write-us-list-item">
           <label class="write-us-label" for="write-us-mail">Ваш e-mail:</label>
-          <input class="write-us-input" id="write-us-mail" type="email" name="у=mail" placeholder="email@example.com">
+          <input class="write-us-input write-us-mail" id="write-us-mail" type="email" name="у=mail"
+            placeholder="email@example.com">
         </li>
         <li class="write-us-list-item">
           <label class="write-us-label" for="wrie-us-user-text">Текст письма:</label>
-          <textarea class="write-us-user-text" name="write-us-user-text" id="wrie-us-user-text" cols="100%" rows="100%"
+          <textarea class="write-us-user-text" name="write-us-user-text" id="wrie-us-user-text" cols="100" rows="100"
             placeholder="В свободной форме"></textarea>
         </li>
       </ul>
+      <div class="write-us-bottom">
+        <button class="button modal-write-us-button" type="submit">Отправить</button>
+      </div>
     </form>
-    <div class="write-us-bottom">
-      <button class="button modal-write-us-button" type="submit">Отправить</button>
-    </div>
-    <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <button class="modal-close-button write-us-close" type="button"><span
+        class="visually-hidden">Закрыть</span></button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="modal-map-title visually-hidden">Где нас найти</h2>
-    <img src="img/modal-map-img.jpg" width="943" height="447" alt="г.Санкт-Петербург, ул Большая Конюшенная 19">
-    <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+      width="943" height="447" allowfullscreen
+      title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" style="border: none;"></iframe>
+    <button class="modal-close-button map-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+
+  <section class="modal modal-cart">
+    <h2 class="visually-hidden modal-cart-title">Добавление товара в карзину</h2>
+
+    <p class="modal-cart-message">Товар добавлен в карзину!</p>
+
+    <div class="modal-cart-bottom">
+      <button class="button cart-checkout-button" type="button">Оформить заказ</button>
+      <button class="button cart-continue-button" type="button">Продолжить покупки</button>
+    </div>
+
+    <button class="modal-close-button cart-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+
+  <script src="js/modal-write_us.js"></script>
+  <script src="js/modal-map.js"></script>
+  <script src="js/modal-cart.js"></script>
 </body>
 
 </html>
