@@ -18,8 +18,9 @@
             alt="Логотип" /></a>
 
         <form class="search-form">
-          <input class="main-search-btn" type="submit" value="">
-          <input class="main-search" type="text" placeholder="Поиск:">
+          <button class="main-search-btn" type="submit"><span class="visually-hidden">Найти</span></button>
+          <input class="main-search" type="text" placeholder="Поиск:" id="search-input">
+          <label class="visually-hidden" for="search-input">Введите название товара или раздела</label>
         </form>
 
         <!-- Ссылки на страницы: закладки, корзина и оформление заказа -->
@@ -70,7 +71,7 @@
       <div class="container">
         <h2 class="promo-main-title visually-hidden">Товары и услуги</h2>
         <ul class="list-reset promo-list">
-          <li class="promo-item">
+          <li class="promo-item new">
             <h3 class="promo-item-title">Материалы</h3>
             <a class="promo-item-link" href="">На любой вкус</a>
           </li>
@@ -162,7 +163,7 @@
               <h3 class="product-card-title">Перфоратор BOSCH BFG 2000</h3>
               <img class="product-img" src="img/popular-product-img-4.jpg" width="127" height="112"
                 alt="Товар перфоратор модели BOSCH BFG 2000">
-                <del class="product-card-old-price">22500 Р.</del>
+              <del class="product-card-old-price">22500 Р.</del>
               <ins class="product-card-price">12500 Р.</ins>
               <a class="button product-card-button-buy" href="">Купить</a>
               <a class="button product-card-button-tomarks" href="">В закладки</a>
@@ -405,13 +406,13 @@
     <div class="write-us-bottom">
       <button class="button modal-write-us-button" type="submit">Отправить</button>
     </div>
-    <button class="modal-close-button" type="button"></button>
+    <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="modal-map-title visually-hidden">Где нас найти</h2>
     <img src="img/modal-map-img.jpg" width="943" height="447" alt="г.Санкт-Петербург, ул Большая Конюшенная 19">
-    <button class="modal-close-button" type="button"></button>
+    <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
 

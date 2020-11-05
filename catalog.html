@@ -18,9 +18,11 @@
             alt="Логотип" /></a>
 
         <form class="search-form">
-          <input class="main-search-btn" type="submit" value="">
-          <input class="main-search" type="text" placeholder="Поиск:">
+          <button class="main-search-btn" type="submit"><span class="visually-hidden">Найти</span></button>
+          <input class="main-search" type="text" placeholder="Поиск:" id="search-input">
+          <label class="visually-hidden" for="search-input">Введите название товара или раздела</label>
         </form>
+
 
         <!-- Ссылки на страницы: закладки, корзина и оформление заказа -->
         <a class="marks-link" href="">Закладки: 0</a>
@@ -46,7 +48,7 @@
       <div class="login catalog-login">
         <div class="user-links-wrapper">
           <a class="authorized-user" href="">Равшан Джамшутович</a>
-          <a class="logout" href=""></a>
+          <a class="logout" href=""><span class="visually-hidden">Выйти</span></a>
         </div>
         <ul class="list-reset orders-personal-list">
           <li class="personal-list-item"><a class="orders" href="">Мои заказы</a></li>
@@ -77,7 +79,8 @@
         <!-- "Хлебные крошки" -->
         <ul class="list-reset bread-crumbs">
           <li class="bread-crumbs-item">
-            <a class="bread-crumbs-link tohome-link" href="index.html"></a>
+            <a class="bread-crumbs-link tohome-link" href="index.html"><span class="visually-hidden">На
+                главную</span></a>
           </li>
           <li class="bread-crumbs-item">
             <a class="bread-crumbs-link" href="catalog.html">Каталог</a>
@@ -118,7 +121,6 @@
 
                 <div class="price-controls">
                   <input class="min-price" type="number" name="min-price" value="0">
-                  <span class="price-del">&#45;</span>
                   <input class="max-price" type="number" name="max-price" value="30000">
                 </div>
               </div>
@@ -193,14 +195,14 @@
               </li>
               <li class="product-sort-item">
                 <a class="product-sort-link product-sort-more sort-active" href="">
-                  <span class="visually-hidden">Больше</span>
+                  <span class="visually-hidden">По возростанию</span>
                   <svg width="12" height="10" fill="#C5C5C5">
                     <path d=" M5.7 0l5.5 10H.2" /></svg>
                 </a>
               </li>
               <li class="product-sort-item">
                 <a class="product-sort-link product-sort-less" href="">
-                  <span class="visually-hidden">Меньше</span>
+                  <span class="visually-hidden">По убыванию</span>
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="#C5C5C5">
                     <path d=" M5.66241 10L0.162415 0H11.1624" />
                   </svg>
@@ -431,7 +433,7 @@
       <button class="button cart-continue-button" type="button">Продолжить покупки</button>
     </div>
 
-    <button class="modal-close-button" type="button"></button>
+    <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
 

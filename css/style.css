@@ -308,6 +308,7 @@ a {
   background-color: transparent;
   border: none;
   background-image: url("../img/icon-search.svg");
+  transform: translateX(-3px) translateY(-6px);
 }
 
 .search-form {
@@ -320,6 +321,7 @@ a {
   background-color: transparent;
   border: none;
   color: var(--white);
+  width: 235px;
 }
 
 .marks-link,
@@ -639,24 +641,6 @@ a {
   background-position: 0 0;
 }
 
-.promo-item:nth-child(1)::before {
-  content: "New";
-  text-transform: uppercase;
-  font-size: 14px;
-  position: absolute;
-  width: 95px;
-  height: 0;
-  transform: translate(50%) rotate(45deg);
-  transform-origin: center top;
-  top: 12px;
-  right: 12px;
-  text-align: center;
-  color: var(--white);
-  border-bottom: 30px solid var(--basic-red);
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-}
-
 .promo-item:nth-child(1)::after {
   width: 44px;
   height: 65px;
@@ -886,17 +870,21 @@ a {
   transform: translateX(-50%);
 }
 
+.promo-item.new::before,
 .popular-products-item.new::after,
 .products-item.new::after {
   content: "New";
   font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 33px;
+  text-transform: uppercase;
   position: absolute;
-  width: 100px;
+  width: 95px;
   height: 0;
   transform: translate(50%) rotate(45deg);
   transform-origin: center top;
-  top: 14px;
-  right: 14px;
+  top: 13px;
+  right: 13px;
   text-align: center;
   color: var(--white);
   border-bottom: 30px solid var(--basic-red);
@@ -1405,12 +1393,12 @@ a {
   line-height: 18px;
   color: var(--black);
   text-transform: uppercase;
-  padding: 0 16px 0 26px;
+  padding: 0 15px 0 26px;
 }
 
 .tohome-link {
-  padding: 0;
-  margin-right: 29px;
+  padding: 10px;
+  margin-right: 10px;
 }
 
 .bread-crumbs-item {
@@ -1432,6 +1420,7 @@ a {
   width: 14px;
   height: 12px;
   background-image: url("../img/icon-home.svg");
+  z-index: -999;
 }
 
 .filter-sort-product-wrapper {
@@ -1524,6 +1513,15 @@ a {
 .price-controls {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.price-controls::before {
+  content: "-";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .price-del {
@@ -1544,7 +1542,6 @@ a {
   border: none;
   border-radius: 5px;
   background-color: var(--options-background);
-  position: relative;
 }
 
 .min-price::-webkit-outer-spin-button,
