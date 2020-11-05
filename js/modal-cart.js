@@ -1,10 +1,10 @@
-const cartOpen = document.querySelectorAll(".product-card-button-buy");
-const cartClose = document.querySelector(".cart-close");
-const cartContinue = document.querySelector(".cart-continue-button");
+var cartOpen = document.querySelectorAll(".product-card-button-buy");
+var cartClose = document.querySelector(".cart-close");
+var cartContinue = document.querySelector(".cart-continue-button");
 
-const cartPopup = document.querySelector(".modal-cart");
+var cartPopup = document.querySelector(".modal-cart");
 
-for (let i = 0; i < cartOpen.length; i++) {
+for (var i = 0; i < cartOpen.length; i++) {
   cartOpen[i].addEventListener("click", function (evt) {
     evt.preventDefault();
 
@@ -14,7 +14,7 @@ for (let i = 0; i < cartOpen.length; i++) {
 
 cartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  
+
   cartPopup.classList.remove("modal-show");
 })
 

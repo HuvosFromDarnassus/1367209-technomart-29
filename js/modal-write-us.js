@@ -1,15 +1,15 @@
-const writeusOpen = document.querySelector(".contacts-button");
-const writeUsClose = document.querySelector(".write-us-close");
+var writeusOpen = document.querySelector(".contacts-button");
+var writeUsClose = document.querySelector(".write-us-close");
 
-const writeUsPopup = document.querySelector(".modal-write-us");
+var writeUsPopup = document.querySelector(".modal-write-us");
 
-const writeUsForm = document.querySelector(".write-us-form");
-const writeUsName = document.querySelector(".write-us-name");
-const writeUsMail = document.querySelector(".write-us-mail");
-const writeUsText = document.querySelector(".write-us-user-text");
+var writeUsForm = document.querySelector(".write-us-form");
+var writeUsName = document.querySelector(".write-us-name");
+var writeUsMail = document.querySelector(".write-us-mail");
+var writeUsText = document.querySelector(".write-us-user-text");
 
-let isStrorageSupport = true;
-let storage = "";
+var isStrorageSupport = true;
+var storage = "";
 
 try {
   storage = localStorage.getItem("mail");
