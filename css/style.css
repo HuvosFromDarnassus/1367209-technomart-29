@@ -861,15 +861,9 @@ a {
   display: none;
   position: absolute;
   width: 135px;
-  height: 120px;
   top: 38px;
-  left: 50%;
-  transform: translateY(-12%);
-  transform: translateX(-50%);
-  white-space: normal;
-  clip: unset;
-  clip-path: none;
-  overflow: unset;
+  left: 40px;
+  right: 40px;
 }
 
 .product-card:hover .product-card-buttons-wrapper {
