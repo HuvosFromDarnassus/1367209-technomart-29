@@ -103,17 +103,21 @@
             <!-- Карусель категорий товаров -->
             <div class="slider">
               <ul class="list-reset slider-list">
-                <li class="slide">
+                <li class="slide slide-active">
                   <h3 class="slide-title">Перфораторы</h3>
                   <p class="slide-text">Настоящие мужские игрушки</p>
                   <a class="button slide-button" href="catalog.html">Открыть каталог</a>
                 </li>
                 <li class="slide">
-                  <h3 class="slide-title">Перфораторы</h3>
-                  <p class="slide-text">Настоящие мужские игрушки</p>
+                  <h3 class="slide-title">Дрели</h3>
+                  <p class="slide-text">Соседям на радость!</p>
                   <a class="button slide-button" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
+              <div class="slider-controls">
+                <button class="slider-controls-button current" type="button" aria-label="Первый слайд"></button>
+                <button class="slider-controls-button"type="button" aria-label="Второй слайд"></button>
+              </div>
               <button class="slider-button slider-button-back button-disabled slider-arrow " type="button"
                 disabled><span class="visually-hidden">Назад</span></button>
               <button class="slider-button slider-button-next slider-arrow" type="button"><span
@@ -248,14 +252,14 @@
         <div class="services-tabs-wrapper">
           <!-- Список ссылок-переключателей -->
           <ul class="list-reset services-tabs-list">
-            <li class="services-tab-item"><a class="services-tab-link" href="">Доставка</a></li>
+            <li class="services-tab-item"><a class="services-tab-link tab-link-active" href="">Доставка</a></li>
             <li class="services-tab-item"><a class="services-tab-link" href="">Гарантия</a></li>
             <li class="services-tab-item"><a class="services-tab-link" href="">Кредит</a></li>
           </ul>
 
           <!-- Список с переключаемыми элементами списка с сервисами -->
           <ul class="list-reset services-content-list">
-            <li class="services-content-item">
+            <li class="services-content-item tab-active">
               <h3 class="title services-content-title">Доставка</h3>
               <p class="services-content-text">
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду

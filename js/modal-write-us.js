@@ -52,7 +52,7 @@ writeUsForm.addEventListener("submit", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.key === 'Escape') {
+  if (evt.key === "Escape") {
     if (writeUsPopup.classList.contains("modal-show")) {
       evt.preventDefault();
 

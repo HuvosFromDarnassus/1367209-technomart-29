@@ -16,7 +16,7 @@ mapClose.addEventListener("click", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.key === 'Escape') {
+  if (evt.key === "Escape") {
     if (mapPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       mapPopup.classList.remove("modal-show");

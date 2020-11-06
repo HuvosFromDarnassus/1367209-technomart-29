@@ -25,7 +25,7 @@ cartContinue.addEventListener("click", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.key === 'Escape') {
+  if (evt.key === "Escape") {
     if (cartPopup.classList.contains("modal-show")) {
       cartPopup.classList.remove("modal-show");
     }
