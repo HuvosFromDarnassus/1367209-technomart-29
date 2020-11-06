@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>HTML Academy: Техномарт</title>
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -18,8 +18,12 @@
             alt="Логотип" /></a>
 
         <form class="search-form">
-          <button class="main-search-btn" type="submit"><span class="visually-hidden">Найти</span></button>
           <input class="main-search" type="search" placeholder="Поиск:" id="search-input">
+          <button class="main-search-btn" type="submit"><span class="visually-hidden">Найти</span><svg width="17"
+              height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.5 12l3.5 3.6-1.4 1.4-3.6-3.5a7.5 7.5 0 0 1-12-6A7.5 7.5 0 1 1 13.5 12zm-6-10a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"
+                fill="#fff" /></svg></button>
           <label class="visually-hidden" for="search-input">Введите название товара или раздела</label>
         </form>
 
@@ -45,7 +49,11 @@
 
       <!-- Основное меню -->
       <div class="login">
-        <a class="login-link" href="">Войти</a>
+        <a class="login-link" href=""><svg class="login-link-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.17 8.5L5.7 0v6H0v5h5.71v6l8.46-8.5z" fill="#C5C5C5" />
+            <path
+              d="M16.18 15.01h-4.79V17h4.79c2.07 0 2.86-1.81 2.88-3.03V3.03C19.04 1.8 18.26 0 16.18 0h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z"
+              fill="#C5C5C5" /></svg>Войти</a>
         <a class="signup-link" href="">Регистрация</a>
       </div>
     </div>
@@ -107,8 +115,9 @@
                 </li>
               </ul>
               <button class="slider-button slider-button-back button-disabled slider-arrow " type="button"
-                disabled>Назад</button>
-              <button class="slider-button slider-button-next slider-arrow " type="button">Вперед</button>
+                disabled><span class="visually-hidden">Назад</span></button>
+              <button class="slider-button slider-button-next slider-arrow" type="button"><span
+                  class="visually-hidden">Вперед</span></button>
             </div>
           </li>
         </ul>
@@ -133,7 +142,7 @@
               <del class="product-card-old-price">32500 Р.</del>
               <ins class="product-card-price">25500 Р.</ins>
               <div class="product-card-buttons-wrapper">
-                <a class="button product-card-button-buy" href="">Купить</a>
+                <a class="button product-card-button-buy" href="mycart.html">Купить</a>
                 <a class="button product-card-button-tomarks" href="">В закладки</a>
               </div>
             </article>
@@ -146,7 +155,7 @@
               <del class="product-card-old-price">22500 Р.</del>
               <ins class="product-card-price">15500 Р.</ins>
               <div class="product-card-buttons-wrapper">
-                <a class="button product-card-button-buy" href="">Купить</a>
+                <a class="button product-card-button-buy" href="mycart.html">Купить</a>
                 <a class="button product-card-button-tomarks" href="">В закладки</a>
               </div>
             </article>
@@ -159,7 +168,7 @@
               <del class="product-card-old-price">30500 Р.</del>
               <ins class="product-card-price">25500 Р.</ins>
               <div class="product-card-buttons-wrapper">
-                <a class="button product-card-button-buy" href="">Купить</a>
+                <a class="button product-card-button-buy" href="mycart.html">Купить</a>
                 <a class="button product-card-button-tomarks" href="">В закладки</a>
               </div>
             </article>
@@ -172,7 +181,7 @@
               <del class="product-card-old-price">22500 Р.</del>
               <ins class="product-card-price">12500 Р.</ins>
               <div class="product-card-buttons-wrapper">
-                <a class="button product-card-button-buy" href="">Купить</a>
+                <a class="button product-card-button-buy" href="mycart.html">Купить</a>
                 <a class="button product-card-button-tomarks" href="">В закладки</a>
               </div>
             </article>
@@ -309,7 +318,7 @@
           <a class="contacts-map-link" href="https://www.google.ru/maps"><img src="img/map-preview-img.jpg" width="300"
               height="158" alt="Адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
 
-          <a class="button contacts-button" href="">Заблудились? Напишите нам!</a>
+          <a class="button contacts-button" href="write-us.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </section>
@@ -407,7 +416,7 @@
         </li>
         <li class="write-us-list-item">
           <label class="write-us-label" for="wrie-us-user-text">Текст письма:</label>
-          <textarea class="write-us-user-text" name="write-us-user-text" id="wrie-us-user-text" cols="100" rows="100"
+          <textarea class="write-us-user-text" name="write-us-user-text" id="wrie-us-user-text" cols="100" rows="10"
             placeholder="В свободной форме"></textarea>
         </li>
       </ul>
