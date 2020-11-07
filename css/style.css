@@ -34,6 +34,8 @@
   --active-buy-button-green: #518534;
   --grey-lighten: #ffffff @0% rgba(255, 255, 255, 0) @100%;
   --shadow-black: rgba(0, 0, 0, 0.3);
+  --slide-background-first: #cbbaa8;
+  --slide-background-second: #9f7b6f;
 }
 
 *,
@@ -169,6 +171,7 @@ a {
   text-transform: uppercase;
   background-color: var(--basic-red);
   display: inline-block;
+  vertical-align: top;
   width: 192px;
   padding: 10px 0;
   text-align: center;
@@ -559,11 +562,11 @@ a {
   position: relative;
 }
 
-.authorized-user:hover .authorized-user-icon path {
+.authorized-user:hover .authorized-user-icon {
   fill: var(--basic-grey);
 }
 
-.authorized-user:active .authorized-user-icon path {
+.authorized-user:active .authorized-user-icon {
   fill: var(--basic-greylight);
 }
 
@@ -768,6 +771,7 @@ a {
   background-color: var(--active-link-white);
   padding: 5px 23px;
   display: inline-block;
+  vertical-align: top;
   min-width: 135px;
   text-align: center;
 }
@@ -802,10 +806,12 @@ a {
 
 .slide:nth-child(1) {
   background-image: url("../img/slider-img-1.jpg");
+  background-color: var(--slide-background-first);
 }
 
 .slide:nth-child(2) {
   background-image: url("../img/slider-img-2.jpg");
+  background-color: var(--slide-background-second);
 }
 
 .slide-active {

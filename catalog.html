@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <title>HTML Academy: Каталог</title>
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -14,8 +14,8 @@
     <div class="header-top-wrapper">
       <div class="header-top container">
         <!-- Изображение-заглушка - логотип сайта -->
-        <a class="header-logo" href="index.html"><img class="header-logo-img" src="img/header-logo.svg"
-            alt="Логотип" /></a>
+        <a class="header-logo" href="index.html"><img class="header-logo-img" src="img/header-logo.svg" alt="Логотип"
+            width="108" height="18" /></a>
 
         <form class="search-form">
           <input class="main-search" type="search" placeholder="Поиск:" id="search-input">
@@ -51,11 +51,11 @@
       <!-- Основное меню -->
       <div class="login catalog-login">
         <div class="user-links-wrapper">
-          <a class="authorized-user" href=""><svg class="authorized-user-icon" width="20" height="18" fill="none"
+          <a class="authorized-user" href=""><svg class="authorized-user-icon" width="20" height="18" fill="#C5C5C5"
               xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M17.9 14.2a22 22 0 0 1-5.2-2.4c-.7-.5-.8-1.6-.5-2.4A5.5 5.5 0 0 0 14 5C14 2.3 12.2 0 10 0S6 2.3 6 5c0 1.9.7 3.5 1.8 4.4.3.8.2 1.9-.5 2.4-1 .7-3 1.6-5.2 2.4C0 14.9 0 18 0 18h20s0-3.1-2.1-3.8z"
-                fill="#C5C5C5" /></svg>Равшан Джамшутович</a>
+                d="M17.9 14.2a22 22 0 0 1-5.2-2.4c-.7-.5-.8-1.6-.5-2.4A5.5 5.5 0 0 0 14 5C14 2.3 12.2 0 10 0S6 2.3 6 5c0 1.9.7 3.5 1.8 4.4.3.8.2 1.9-.5 2.4-1 .7-3 1.6-5.2 2.4C0 14.9 0 18 0 18h20s0-3.1-2.1-3.8z" />
+              </svg>Равшан Джамшутович</a>
           <a class="logout" href=""><span class="visually-hidden">Выйти</span></a>
         </div>
         <ul class="list-reset orders-personal-list">
@@ -119,17 +119,19 @@
                       margin-left: 10%;
                       "></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="
+                  <button class="toggle toggle-min" aria-label="start" tabindex="0" style="
                   left: 9%;
-                  "></div>
-                  <div class="toggle toggle-max" tabindex="0" style="
+                  "></button>
+                  <button class="toggle toggle-max" aria-label="end" tabindex="0" style="
                   left: 73%;
-                  "></div>
+                  "></button>
                 </div>
 
                 <div class="price-controls">
-                  <input class="min-price" type="number" name="min-price" value="0">
-                  <input class="max-price" type="number" name="max-price" value="30000">
+                  <label class="price-controls-label visually-hidden" for="min-price">От</label>
+                  <input class="min-price" type="number" name="min-price" value="0" id="min-price">
+                  <label class="price-controls-label visually-hidden" for="max-price">До</label>
+                  <input class="max-price" type="number" name="max-price" value="30000" id="max-price">
                 </div>
               </div>
             </fieldset>
@@ -373,8 +375,8 @@
   <footer class="page-footer footer">
     <!-- FOOTER -->
     <div class="footer-top-wrapper container">
-      <a class="footer-logo" href="index.html"><img class="footer-logo-img" src="img/footer-logo.svg"
-          alt="Логотип" /></a>
+      <a class="footer-logo" href="index.html"><img class="footer-logo-img" src="img/footer-logo.svg" alt="Логотип"
+          width="138" height="23" /></a>
 
       <!-- Основное меню в футере навигационное меню -->
       <nav class="footer-nav">
@@ -417,14 +419,14 @@
           <!-- Секция: Ссылки на соцсети -->
           <h2 class="socials-title visually-hidden">Давайте дружить!</h2>
           <ul class="list-reset socials-list">
-            <li class="socials-item"><a class="socials-link vk-link" href=""><img src="img/icon-vk.svg"
-                  alt="Вконтакте"></a>
+            <li class="socials-item"><a class="socials-link vk-link" href=""><img src="img/icon-vk.svg" alt="Вконтакте"
+                  width="26" height="15"></a>
             </li>
-            <li class="socials-item"><a class="socials-link fb-link" href=""><img src="img/icon-fb.svg"
-                  alt="Facebook"></a>
+            <li class="socials-item"><a class="socials-link fb-link" href=""><img src="img/icon-fb.svg" alt="Facebook"
+                  width="12" height="22"></a>
             </li>
             <li class="socials-item"><a class="socials-link ig-link" href=""><img src="img/icon-insta.svg"
-                  alt="Instagram"></a>
+                  alt="Instagram" width="21" height="21"></a>
             </li>
           </ul>
         </div>
