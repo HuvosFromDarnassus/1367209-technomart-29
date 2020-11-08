@@ -528,11 +528,11 @@ a {
   padding: 12px 28px 12px 45px;
 }
 
-.login-link:hover .login-link-icon path {
+.login-link:hover .login-link-icon {
   fill: var(--basic-grey);
 }
 
-.login-link:active .login-link-icon path {
+.login-link:active .login-link-icon {
   fill: var(--basic-greylight);
 }
 
@@ -1849,8 +1849,8 @@ a {
   border: none;
 }
 
-.product-sort-more.sort-active path,
-.product-sort-less.sort-active path {
+.sort-active path,
+.sort-active path {
   fill: var(--basic-red);
 }
 
